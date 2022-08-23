@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+/* headings and logo */
+
+h1 {
+    font-size: 3.05rem;
+}
+
+h2 {
+    font-size: 2.44375rem;
+}
+
+h3 {
+    font-size: 1.95625rem;
+}
+
+h1, h2 {
+    font-family: Arvo, Cambria, Cochin, serif;
+    letter-spacing: 4px;
+    color: #001F3F;
+}
+
+#logo {
+    float: center;
+    font-size: 4rem;
+    /*margin-left: 30px;*/
+    color: #FF851B;
+    text-decoration: none;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* hero image and cover text */
