@@ -13,7 +13,7 @@ body {
     color: #555555;
 }
 
-/* headings and logo */
+/* headings and paragraph */
 
 h1 {
     font-size: 3.05rem;
@@ -27,54 +27,11 @@ h3 {
     font-size: 1.95625rem;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5{
     font-family: Arvo, Cambria, Cochin, serif;
     letter-spacing: 4px;
     color: #001F3F;
     display: inline-block;
-}
-
-#logo {
-    float: left;
-    font-size: 4rem;
-    /*margin-left: 30px;*/
-    color: #FF851B;
-    text-decoration: none;
-}
-
-/* navigation links */
-
-#menu {
-    font-size: 1rem;
-    letter-spacing: 4px;
-    color: #001F3F;
-}
-
-header button {
-    float: right;
-}
-
-#menu, #logo {
-    line-height: 75px;
-}
-
-#menu li {
-    float: left;
-    list-style-type: none;
-    margin-right: 2em;
-}
-
-#menu a {
-    text-decoration: none;
-}
-
-#menu a:hover {
-    border-bottom: 1px solid #001F3F;
-}
-
-.active {
-    font-weight: 700;
-    border-bottom: 1px solid #001F3F;
 }
 
 
@@ -83,9 +40,10 @@ header button {
 button {
     border: none;
     border-radius: 5px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1em;
+    text-transform: uppercase;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     justify-content: center;
     padding: 0.5em 1em 0.5em 1em;
@@ -93,6 +51,14 @@ button {
     height: 3em;
     width: auto;
     min-width: 120px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover {
+    opacity: .5;
 }
 
 .btn-maroon {
@@ -105,7 +71,177 @@ button {
     background-color: #FF851B;
 }
 
+
+/* header, navigation, logo, sign up */
+
+header {
+    display: inline;
+    padding: 1em 3em 1em 3em;
+}
+
+#menu {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-left: 3em;
+}
+
+#logo {
+    float: right;
+    font-size: 4rem;
+    color: #FF851B;
+    text-decoration: none;
+    margin: 1rem 0 2rem 0;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #001F3F;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #001F3F;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: 1px solid #001F3F;
+}
+
+header button {
+    float: right;
+    margin-right: 3em;
+}
+
+
 /* hero image and cover text */
+
+#hero-outer {
+    height: 520px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#cover-text {
+    width: 50%;
+    background: transparent;
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
+}
+
+#cover-text h1 {
+    color: #FF851B;
+}
+
+#cover-text p {
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 1rem
+}
+
+#hero-image {
+    height: 520px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+    /* creates the level of zoom for hero image */
+    @keyframes hero-zoom {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.1);
+        }
+    }
+
+
+/*latest post*/
+
+#latest-post {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 3em 0 3em;
+    background-color: #ffffff;
+    margin: 3em 0 3em 0;
+    vertical-align: middle;
+}
+
+#latest-post-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    box-sizing: border-box;
+    float: left;
+}
+
+#latest-post-text {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 3em;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+}
+
+.caption {
+    color: #FF851B;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.post-title {
+    color: #001F3F;
+}
+
+#latest-post-text p {
+    padding-bottom: 1rem;
+}
+
+
+/*breeds*/
+
+#about-breeds {
+    background: url('../images/about-breeds.jpg') no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#about-breeds div {
+    color: #fafafa;
+    background-color: rgba(255, 255, 255, .7);
+    width: 33%;
+    height: 400px;
+    float: left;
+    padding: 5em 4em 4em 4em;
+    text-align: center;
+    border-right: solid 4px white;
+    box-sizing: border-box;
+}
+
+#about-breeds h3 {
+    color: #001F3F;
+}
+
+#about-breeds p {
+    color: #555555;
+    font-weight: 700;
+}
 
 
 /*sign up banner*/
@@ -116,7 +252,6 @@ button {
     padding: 3em;
     background-color: #FF851B;
     display: inline-block;
-    margin-top: 3em;
     vertical-align: middle;
 }
 
@@ -128,9 +263,10 @@ button {
     float: right;
 }
 
+
 /*footer*/
 footer {
-    height: 100px;
+    padding: 3em;
 }
 
 .socials {
@@ -142,8 +278,7 @@ footer {
 }
 
 .socials i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
+    font-size: 1.5em;
     color: #85144B;
+    padding-right: 3rem;
 }
