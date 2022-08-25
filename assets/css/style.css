@@ -8,15 +8,19 @@
 
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #555555;
+    max-width: 1280px; 
+	margin: 0 auto !important; 
+	float: none !important; 
 }
 
 /* headings and paragraph */
 
 h1 {
     font-size: 3.05rem;
+    padding-bottom: 1rem;
 }
 
 h2 {
@@ -32,6 +36,11 @@ h1, h2, h3, h4, h5{
     letter-spacing: 4px;
     color: #001F3F;
     display: inline-block;
+}
+
+#page-title h2 {
+    color: #555555;
+    padding-bottom: 3em;
 }
 
 
@@ -76,7 +85,8 @@ button:hover {
 
 header {
     display: inline;
-    padding: 1em 3em 1em 3em;
+    padding: 1em 3em 2em 3em;
+    height: 10em;
 }
 
 #menu {
@@ -119,10 +129,46 @@ header button {
 }
 
 
+/*forms*/
+
+form {
+    border: 1px solid #85144B;
+    border-radius: 5px;
+    padding: 2em;
+    margin-right: 3em;
+}
+
+input {
+    color: #555555;
+    border: 1px solid #DEDCDF;
+    border-radius: 3px;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+input:hover {
+    border: 1px solid #FF851B;
+}
+
+::placeholder {
+    color: #DEDCDF;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+label {
+    color: #001F3F;
+    font-weight: 700;
+    background-color: #ffffff;
+}
+
+
 /* hero image and cover text */
 
+/* hero -> Code Institute (25/08/22) How TO - Flip Card http://www.graphicsdrawer.com */
 #hero-outer {
-    height: 520px;
+    height: 600px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -147,7 +193,7 @@ header button {
 }
 
 #hero-image {
-    height: 520px;
+    height: 600px;
     width: 100%;
     background: url('../images/hero-image.jpg') no-repeat center center;
 
@@ -176,24 +222,13 @@ header button {
     padding: 0 3em 0 3em;
     background-color: #ffffff;
     margin: 3em 0 3em 0;
-    vertical-align: middle;
+    display: flex;
+    align-items:center;
 }
 
-#latest-post-img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    box-sizing: border-box;
-    float: left;
-}
-
-#latest-post-text {
+#latest-post div {
     width: 50%;
-    box-sizing: border-box;
-    padding: 3em;
-    vertical-align: middle;
-    display: inline-block;
-    float: right;
+    border-radius: 5px;
 }
 
 .caption {
@@ -202,11 +237,11 @@ header button {
     padding-bottom: 1rem;
 }
 
-.post-title {
+#latest-post h2 {
     color: #001F3F;
 }
 
-#latest-post-text p {
+#latest-post p {
     padding-bottom: 1rem;
 }
 
@@ -222,16 +257,26 @@ header button {
     overflow: hidden;
 }
 
-#about-breeds div {
+#about-breeds-heading {
+    background-color: rgba(255, 255, 255, .7);
+    text-align: center;
+    padding: 1em;
+}
+
+.breeds {
     color: #fafafa;
     background-color: rgba(255, 255, 255, .7);
     width: 33%;
     height: 400px;
     float: left;
-    padding: 5em 4em 4em 4em;
+    padding: 4em;
     text-align: center;
-    border-right: solid 4px white;
     box-sizing: border-box;
+}
+
+#about-breeds h2 {
+    color: #85144B;
+    padding-top: 1em;
 }
 
 #about-breeds h3 {
@@ -244,12 +289,115 @@ header button {
 }
 
 
+/*meet*/
+
+#meet {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3em;
+    background-color: #85144B;
+    margin: 3em 0 3em 0;
+    display: flex;
+    align-items:center;
+}
+
+#meet div {
+    width: 40%;
+    border-radius: 5px;
+}
+
+#meet h2 {
+    color: #FF851B;
+}
+
+#meet p {
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+/* flip card -> W3schools (25/08/22) How TO - Flip Card http://www.graphicsdrawer.com */
+.flip-card {
+    width: 25%;
+    height: auto;
+    padding: 3em;
+    perspective: 1000px; 
+    box-sizing: border-box;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #ffffff;
+    color: #001f3f;
+        border-radius: 5px;
+
+  }
+  
+  .flip-card-back {
+    background-color: #FF851B;
+    color: #001F3F;
+    transform: rotateY(180deg);
+  }
+
+
+/*gallery*/
+
+#gallery {
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 8px;
+}
+
+#gallery > img {
+    width: 100%;
+    padding-bottom: .5em;
+}
+
+
+/*sign up*/
+
+#sign-up-form {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    align-items:center;
+}
+
+#sign-up-form div {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
 /*sign up banner*/
 
 #sign-up-banner {
     width: 100%;
     box-sizing: border-box;
-    padding: 3em;
+    padding: 2em 3em 2em 3em;
     background-color: #FF851B;
     display: inline-block;
     vertical-align: middle;
