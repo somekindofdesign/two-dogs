@@ -39,9 +39,30 @@
         <div>
             <form method="POST" action="https://formdump.codeinstitute.net/">
                 <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Type your full name"><br>
+                <input type="text" id="name" name="name" placeholder="Type your full name" required><br>
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email" placeholder="eg name@emailaddress.com">
+                <p class="label">I want to be updated</p>
+                <div class="radio">
+                    <input id="daily" type="radio" name="blog-frequency" value="daily" required>
+                    <label for="daily">Daily</label>
+                </div>
+                <div class="radio">
+                    <input id="weekly" type="radio" name="blog-frequency" value="weekly">
+                    <label for="weekly">Weekly</label>
+                </div>
+                <div class="radio">
+                    <input id="monthly" type="radio" name="blog-frequency" value="monthly">
+                    <label for="monthly">Monthly</label>
+                </div>
+                <div class="custom-select">
+                    <label for="dog-feelings">How do you feel about dogs?</label>
+                    <select id="dog-feelings" name="dog-feelings">
+                        <option value="dont-deverve">We don't deserve them</option>
+                        <option value="best-friend">Man's best friend</option>
+                        <option value="their-day">Every dog has their day</option>
+                    </select>
+                </div>
                 <input class="btn-maroon" type="submit" id="submit" name="submit">
             </form>
         </div>
