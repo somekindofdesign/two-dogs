@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5{
     font-family: Arvo, Cambria, Cochin, serif;
     letter-spacing: 4px;
     color: #001F3F;
-    display: inline-block;
 }
 
 a {
@@ -45,6 +44,13 @@ a {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
+}
+
+
+/* page titles */
+
+#page-title {
+    padding: 3em;
 }
 
 #page-title h2 {
@@ -101,23 +107,16 @@ hr {
 /* header, navigation, logo, sign up */
 
 header {
-    display: inline;
-    padding: 1em 3em 2em 3em;
-    height: 10em;
+    display: inline-block;
+    padding: 1em 0 2em 0;
+    width: 100%;
 }
 
 #menu {
     font-size: 1rem;
-    letter-spacing: 4px;
     margin-left: 3em;
-}
-
-#logo {
-    float: right;
-    font-size: 4rem;
-    color: #FF851B;
-    text-decoration: none;
-    margin: 1rem 0 2rem 0;
+    width: 33%;
+    float: left;
 }
 
 #menu li {
@@ -132,12 +131,19 @@ header {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #001F3F;
+    border-bottom: 2px solid #FF851B;
 }
 
 .active {
     font-weight: 700;
     border-bottom: 1px solid #001F3F;
+}
+
+#logo {
+    font-size: 4rem;
+    text-align: center;
+    color: #FF851B;
+    width: 33%;
 }
 
 header button {
@@ -267,8 +273,8 @@ label {
 #cover-text {
     width: 50%;
     background: transparent;
-    bottom: 30px;
-    right: 150px;
+    top: 30%;
+    left: 3rem;
     position: absolute;
 }
 
@@ -318,16 +324,16 @@ label {
 #about-breeds-heading {
     background-color: rgba(255, 255, 255, .7);
     text-align: center;
-    padding: 1em;
+    padding: 3em;
 }
 
 .breeds {
     color: #fafafa;
     background-color: rgba(255, 255, 255, .7);
-    width: 33%;
-    height: 400px;
+    width: 33.333333%;
+    height: 320px;
     float: left;
-    padding: 4em;
+    padding: 2em 3em 2em 3em;
     text-align: center;
     box-sizing: border-box;
 }
@@ -480,7 +486,7 @@ label {
 }
 
 
-/*sign up*/
+/*sign up page*/
 
 #sign-up-form {
     width: 100%;
@@ -504,7 +510,6 @@ label {
     padding: 2em 3em 2em 3em;
     background-color: #FF851B;
     display: inline-block;
-    vertical-align: middle;
 }
 
 #sign-up-banner h2 {
