@@ -87,6 +87,12 @@ button:hover {
     background-color: #85144B;
 }
 
+.btn-maroon-outline {
+    color: #85144B;
+    background-color: #ffffff;
+    border: 2px solid #85144B;
+}
+
 .btn-orange {
     color: #85144B;
     background-color: #FF851B;
@@ -556,6 +562,12 @@ label {
     }
   }
 
+
+/* back to top */
+
+.back-to-top {
+    margin: 1em;
+}
 
 /*sign up banner*/
 
