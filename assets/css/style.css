@@ -233,6 +233,7 @@ header button {
 
 #about-breeds {
     background: url('../images/about-breeds.jpg') no-repeat center center;
+    /*Photo by Hannah Lim on Unsplash*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,32 +244,35 @@ header button {
 #about-breeds-heading {
     background-color: rgba(255, 255, 255, .7);
     text-align: center;
-    padding: 3em;
+    padding: 0 3em 0 3em;
 }
 
 .breeds {
     color: #fafafa;
     background-color: rgba(255, 255, 255, .7);
     width: 33.333333%;
-    height: 320px;
+    height: 240px;
     float: left;
-    padding: 2em 3em 2em 3em;
+    padding: 0 4em 0 4em;
     text-align: center;
     box-sizing: border-box;
 }
 
 #about-breeds h2 {
     color: #85144B;
-    padding-top: 1em;
+    padding-top: 2rem;
+    text-align: center;
 }
 
 #about-breeds h3 {
-    color: #001F3F;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
 }
 
 #about-breeds p {
     color: #555555;
     font-weight: 700;
+    padding-bottom: 3rem;
 }
 
 
@@ -553,10 +557,6 @@ label {
     padding: 2em 3em 2em 3em;
     background-color: #FF851B;
     display: inline-block;
-}
-
-#sign-up-banner h2 {
-    float: left;
 }
 
 #sign-up-banner button {
