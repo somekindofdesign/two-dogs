@@ -55,7 +55,6 @@ a {
 
 #page-title h2 {
     color: #555555;
-    padding-bottom: 3em;
 }
 
 
@@ -496,6 +495,7 @@ label {
     background-color: #ffffff;
     display: flex;
     align-items:center;
+    padding: 0 3em 0 3em;
 }
 
 #sign-up-form div {
