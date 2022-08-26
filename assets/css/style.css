@@ -313,7 +313,7 @@ header button {
     display: flex;
 }
 
-.single-profile {
+.single-profiles {
     width: 50%;
     padding: 3em;
     align-items: center;
@@ -324,14 +324,20 @@ header button {
     height: 240px;
     padding: 2emx;
     border-style: solid;
-    border-color: #ccc;
-    border-width: 1px;
+    border-color: #FF851B;
+    border-width: 3px;
     border-radius: 50%;
     margin: 0 0 1em 0;
 }
 
-.circle-cover-bg {
-    background: url('latest-post.jpg') no-repeat center center;
+#circle-cover-eric {
+    background: url('../images/eric.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#circle-cover-jim {
+    background: url('../images/jim.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
