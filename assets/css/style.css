@@ -16,7 +16,7 @@ body {
 	float: none !important; 
 }
 
-/* headings and paragraph */
+/* type */
 
 h1 {
     font-size: 3.05rem;
@@ -40,21 +40,15 @@ h1, h2, h3, h4, h5{
 
 a {
     text-decoration: none;
-    color: #555555;
+    color: #001F3F;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
 }
 
-
-/* page titles */
-
-#page-title {
-    padding: 3em;
-}
-
-#page-title h2 {
-    color: #555555;
+.caption {
+    color: #FF851B;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
 }
 
 
@@ -65,6 +59,7 @@ button {
     border-radius: 5px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1em;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
@@ -81,9 +76,8 @@ button a {
 }
 
 button:hover {
-    opacity: .5;
-    border: 2px solid #F2EBE9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    opacity: .75;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-maroon {
@@ -96,6 +90,7 @@ button:hover {
     background-color: #FF851B;
 }
 
+
 /*hr*/
 
 hr {
@@ -105,7 +100,7 @@ hr {
 }
 
 
-/* header, navigation, logo, sign up */
+/* header (main navigation, logo, sign up buton) */
 
 header {
     display: inline-block;
@@ -113,38 +108,31 @@ header {
     width: 100%;
 }
 
-#menu {
+#main-nav {
     font-size: 1rem;
     margin-left: 3em;
     width: 33%;
     float: left;
 }
 
-#menu li {
+#main-nav li {
     float: left;
     list-style-type: none;
     margin-right: 2em;
 }
 
-#menu a {
+#main-nav a {
     text-decoration: none;
     color: #001F3F;
 }
 
-#menu a:hover {
+#main-nav a:hover {
     border-bottom: 2px solid #FF851B;
 }
 
 .active {
     font-weight: 700;
     border-bottom: 2px solid #001F3F;
-}
-
-#logo {
-    font-size: 4rem;
-    text-align: center;
-    color: #FF851B;
-    width: 33%;
 }
 
 /* logo animation -> MichD (26/08/22) Change text on hover, then return to the previous text https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
@@ -161,13 +149,288 @@ header .logo-icon {
     display: inline;
   }
 
+  .logo-icon, .logo-no-icon {
+    font-size: 4rem;
+    text-align: center;
+    color: #FF851B;
+    width: 33%;
+}
+
 header button {
     float: right;
     margin-right: 3em;
 }
 
 
-/*forms*/
+/* page titles */
+
+#page-title {
+    padding: 3em;
+}
+
+#page-title h2 {
+    color: #555555;
+}
+
+
+/* hero image and text */
+
+/* hero -> Code Institute (25/08/22) Love Running Walkthrough Project  Creating the Hero Image https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/ */
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+#cover-text {
+    width: 50%;
+    background: transparent;
+    top: 30%;
+    left: 3rem;
+    position: absolute;
+}
+
+#cover-text h1 {
+    color: #FF851B;
+}
+
+#cover-text p {
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 1rem
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes hero-zoom {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.1);
+        }
+    }
+
+
+/*learn about breeds section*/
+
+#about-breeds {
+    background: url('../images/about-breeds.jpg') no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#about-breeds-heading {
+    background-color: rgba(255, 255, 255, .7);
+    text-align: center;
+    padding: 3em;
+}
+
+.breeds {
+    color: #fafafa;
+    background-color: rgba(255, 255, 255, .7);
+    width: 33.333333%;
+    height: 320px;
+    float: left;
+    padding: 2em 3em 2em 3em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#about-breeds h2 {
+    color: #85144B;
+    padding-top: 1em;
+}
+
+#about-breeds h3 {
+    color: #001F3F;
+}
+
+#about-breeds p {
+    color: #555555;
+    font-weight: 700;
+}
+
+
+/*meet the two dogs page*/
+
+#meet {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3em;
+    background-color: #85144B;
+    margin: 0 0 3em 0;
+    display: flex;
+    align-items:center;
+}
+
+#meet div {
+    width: 50%;
+    border-radius: 5px;
+}
+
+#meet h2 {
+    color: #FF851B;
+}
+
+#meet p {
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+
+/* dog profiles section */
+
+#dog-profiles {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3em;
+    margin: 0 0 3em 0;
+    display: flex;
+}
+
+.single-profile {
+    width: 50%;
+    padding: 3em;
+    align-items: center;
+}
+
+.circle-container {
+    width: 240px;
+    height: 240px;
+    padding: 2emx;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 0 1em 0;
+}
+
+.circle-cover-bg {
+    background: url('latest-post.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+tr {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+td {
+    padding-left: 1rem;
+}
+
+/*tails of two dogs blog page*/
+
+#latest-post {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 3em 0 3em;
+    background-color: #ffffff;
+    margin: 0 0 3em 0;
+    display: flex;
+    align-items:center;
+}
+
+#latest-post div {
+    width: 50%;
+    border-radius: 5px;
+}
+
+#latest-post h2 {
+    color: #001F3F;
+}
+
+#latest-post p {
+    padding-bottom: 1rem;
+}
+
+.post-listing {
+    background-color: white;
+    padding: 3rem;
+    margin-top: 1rem;
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+  }
+
+  .blog-img {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+#blog-post {
+    width: 60%;
+    padding: 3em;
+}
+
+ol {
+    padding-left: 3em;
+}
+
+#blog {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em 0 1em 0;
+    display: flex;
+    align-items:center;
+}
+
+#blog div {
+    width: 40%;
+    border-radius: 5px;
+}
+
+
+/*gallery page*/
+
+#gallery {
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 8px;
+}
+
+#gallery > img {
+    width: 100%;
+    padding-bottom: .5em;
+}
+
+
+/*sign up page*/
+
+#sign-up-form {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    align-items:center;
+    padding: 0 3em 0 3em;
+}
+
+#sign-up-form div {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+/* sign up form*/
 
 form {
     border: 1px solid #85144B;
@@ -273,271 +536,6 @@ label {
       }
     }
   }
-
-
-/* hero image and cover text */
-
-/* hero -> Code Institute (25/08/22) How TO - Flip Card http://www.graphicsdrawer.com */
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#cover-text {
-    width: 50%;
-    background: transparent;
-    top: 30%;
-    left: 3rem;
-    position: absolute;
-}
-
-#cover-text h1 {
-    color: #FF851B;
-}
-
-#cover-text p {
-    color: #ffffff;
-    font-weight: 700;
-    padding-bottom: 1rem
-}
-
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url('../images/hero-image.jpg') no-repeat center center;
-
-    /* animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-    /* creates the level of zoom for hero image */
-    @keyframes hero-zoom {
-        from{
-            transform: scale(1);
-        }
-        to{
-            transform: scale(1.1);
-        }
-    }
-
-
-/*breeds*/
-
-#about-breeds {
-    background: url('../images/about-breeds.jpg') no-repeat center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-#about-breeds-heading {
-    background-color: rgba(255, 255, 255, .7);
-    text-align: center;
-    padding: 3em;
-}
-
-.breeds {
-    color: #fafafa;
-    background-color: rgba(255, 255, 255, .7);
-    width: 33.333333%;
-    height: 320px;
-    float: left;
-    padding: 2em 3em 2em 3em;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-#about-breeds h2 {
-    color: #85144B;
-    padding-top: 1em;
-}
-
-#about-breeds h3 {
-    color: #001F3F;
-}
-
-#about-breeds p {
-    color: #555555;
-    font-weight: 700;
-}
-
-
-/*meet*/
-
-#meet {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 3em;
-    background-color: #85144B;
-    margin: 0 0 3em 0;
-    display: flex;
-    align-items:center;
-}
-
-#meet div {
-    width: 50%;
-    border-radius: 5px;
-}
-
-#meet h2 {
-    color: #FF851B;
-}
-
-#meet p {
-    color: #ffffff;
-    padding-bottom: 1rem;
-}
-
-/* flip card -> W3schools (25/08/22) How TO - Flip Card http://www.graphicsdrawer.com */
-.flip-card {
-    width: 25%;
-    height: auto;
-    padding: 3em;
-    perspective: 1000px; 
-    box-sizing: border-box;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #ffffff;
-    color: #001f3f;
-        border-radius: 5px;
-
-  }
-  
-  .flip-card-back {
-    background-color: #FF851B;
-    color: #001F3F;
-    transform: rotateY(180deg);
-  }
-
-
-/*tails blog*/
-
-#latest-post {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 3em 0 3em;
-    background-color: #ffffff;
-    margin: 0 0 3em 0;
-    display: flex;
-    align-items:center;
-}
-
-#latest-post div {
-    width: 50%;
-    border-radius: 5px;
-}
-
-.caption {
-    color: #FF851B;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-}
-
-#latest-post h2 {
-    color: #001F3F;
-}
-
-#latest-post p {
-    padding-bottom: 1rem;
-}
-
-.post-listing {
-    background-color: white;
-    padding: 3rem;
-    margin-top: 1rem;
-    float: left;
-    width: 33%;
-    box-sizing: border-box;
-  }
-
-  .blog-img {
-    width: 100%;
-    padding-bottom: 1em;
-  }
-
-#blog-post {
-    width: 60%;
-    padding: 3em;
-}
-
-ol {
-    padding-left: 3em;
-}
-
-#blog {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 1em 0 1em 0;
-    display: flex;
-    align-items:center;
-}
-
-#blog div {
-    width: 40%;
-    border-radius: 5px;
-}
-
-
-/*gallery*/
-
-#gallery {
-    width: 100%;
-    box-sizing: border-box;
-    clear: both;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 8px;
-}
-
-#gallery > img {
-    width: 100%;
-    padding-bottom: .5em;
-}
-
-
-/*sign up page*/
-
-#sign-up-form {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    display: flex;
-    align-items:center;
-    padding: 0 3em 0 3em;
-}
-
-#sign-up-form div {
-    width: 50%;
-    box-sizing: border-box;
-}
 
 
 /*sign up banner*/
