@@ -83,6 +83,8 @@ button a {
 
 button:hover {
     opacity: .5;
+    border: 2px solid #F2EBE9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-maroon {
@@ -136,7 +138,7 @@ header {
 
 .active {
     font-weight: 700;
-    border-bottom: 1px solid #001F3F;
+    border-bottom: 2px solid #001F3F;
 }
 
 #logo {
@@ -538,4 +540,8 @@ footer {
     font-size: 1.5em;
     color: #85144B;
     padding-right: 3rem;
+}
+
+.socials i:hover {
+    opacity: .75;
 }
