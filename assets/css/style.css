@@ -153,19 +153,19 @@ header {
 
 /* logo animation -> MichD (26/08/22) Change text on hover, then return to the previous text https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
 
-header .logo-icon {
+ #logo .logo-icon {
     display: none;
   }
   
-  header:hover .logo-no-icon {
+  #logo:hover .logo-no-icon {
     display: none;
   }
   
-  header:hover .logo-icon {
+  #logo:hover .logo-icon {
     display: inline;
   }
   
-  header i {
+  #logo i {
     font-size: 3.04rem;
     text-align: center;
     color: #FF851B;
