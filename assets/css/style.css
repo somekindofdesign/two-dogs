@@ -135,6 +135,14 @@ header {
     border-bottom: 2px solid #001F3F;
 }
 
+#logo {
+    color: #FF851B;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: Arvo, Cambria, Cochin, serif;
+    letter-spacing: 4px;
+}
+
 /* logo animation -> MichD (26/08/22) Change text on hover, then return to the previous text https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
 
 header .logo-icon {
@@ -148,12 +156,11 @@ header .logo-icon {
   header:hover .logo-icon {
     display: inline;
   }
-
-  .logo-icon, .logo-no-icon {
-    font-size: 4rem;
+  
+  header i {
+    font-size: 3.04rem;
     text-align: center;
     color: #FF851B;
-    width: 33%;
 }
 
 header button {
