@@ -11,7 +11,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.8em;
-    color: #555555;
+    color: #585160;
     max-width: 1280px; 
 	margin: 0 auto !important; 
 	float: none !important; 
@@ -111,14 +111,14 @@ hr {
 
 header {
     display: inline-block;
-    padding: 1em 0 2em 0;
+    padding: 3em 0 2em 0;
     width: 100%;
+    height: auto;
 }
 
 #main-nav {
     font-size: 1rem;
     margin-left: 3em;
-    width: 33%;
     float: left;
 }
 
@@ -144,30 +144,18 @@ header {
 
 #logo {
     color: #FF851B;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     font-family: Arvo, Cambria, Cochin, serif;
     letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* logo animation -> MichD (26/08/22) Change text on hover, then return to the previous text https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
-
- #logo .logo-icon {
-    display: none;
-  }
-  
-  #logo:hover .logo-no-icon {
-    display: none;
-  }
-  
-  #logo:hover .logo-icon {
-    display: inline;
-  }
   
   #logo i {
-    font-size: 3.04rem;
+    font-size: 2.8rem;
     text-align: center;
-    color: #FF851B;
 }
 
 header button {
@@ -183,7 +171,7 @@ header button {
 }
 
 #page-title h2 {
-    color: #555555;
+    color: #585160;
 }
 
 
@@ -277,7 +265,7 @@ header button {
 }
 
 #about-breeds p {
-    color: #555555;
+    color: #585160;
     font-weight: 700;
     padding-bottom: 3rem;
 }
@@ -471,7 +459,7 @@ form {
 }
 
 input {
-    color: #555555;
+    color: #585160;
     border: 1px solid #DEDCDF;
     border-radius: 3px;
     padding: 1em .5em 1em .5em;
@@ -483,11 +471,12 @@ input:hover {
 }
 
 select {
-    color: #555555;
+    width: 75%
+    color: #585160;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     border: 1px solid #DEDCDF;
     border-radius: 3px;
-    padding: 1em .5em 1em .5em;
+    padding: 1em;
     margin-bottom: 1em;
 }
 
@@ -526,7 +515,7 @@ label {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 400;
-    color: #555555;
+    color: #585160;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
