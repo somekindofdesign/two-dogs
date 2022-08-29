@@ -316,26 +316,29 @@ header button {
 #dog-profiles {
     width: 100%;
     box-sizing: border-box;
-    padding: 3em;
-    margin: 0 0 3em 0;
+    margin: 0;
     display: flex;
+    align-items:center;
+}
+
+#dog-profiles h2 {
+    text-align: center;
+    margin-top: 1em;
 }
 
 .single-profiles {
     width: 50%;
     padding: 3em;
-    align-items: center;
 }
 
 .circle-container {
     width: 240px;
     height: 240px;
-    padding: 2emx;
     border-style: solid;
     border-color: #FF851B;
     border-width: 3px;
     border-radius: 50%;
-    margin: 0 0 1em 0;
+    margin: auto;
 }
 
 #circle-cover-eric {
