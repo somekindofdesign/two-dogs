@@ -43,18 +43,20 @@
                 <input type="text" id="name" name="name" placeholder="Type your full name" required><br>
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email" placeholder="eg name@emailaddress.com">
-                <p class="label">I want to be updated</p>
-                <div class="radio">
-                    <input id="daily" type="radio" name="blog-frequency" value="daily" required>
-                    <label for="daily">Daily</label>
-                </div>
-                <div class="radio">
+                <div id="radio-group">
+                <p>I want to be updated...</p>
+                <label for="daily" class="container">Daily
+                    <input id="daily" type="radio" checked="checked" name="blog-frequency" value="daily" required>
+                    <span class="radio"></span>
+                  </label>
+                  <label for="weekly" class="container">Weekly
                     <input id="weekly" type="radio" name="blog-frequency" value="weekly">
-                    <label for="weekly">Weekly</label>
-                </div>
-                <div class="radio">
+                    <span class="radio"></span>
+                  </label>
+                  <label for="monthly" class="container">Monthly
                     <input id="monthly" type="radio" name="blog-frequency" value="monthly">
-                    <label for="monthly">Monthly</label>
+                    <span class="radio"></span>
+                  </label>
                 </div>
                 <div class="custom-select">
                     <label for="dog-feelings">How do you feel about dogs?</label>
