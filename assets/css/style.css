@@ -98,6 +98,12 @@ button:hover {
     background-color: #FF851B;
 }
 
+.hyper-link {
+    color: #85144B;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 
 /*hr*/
 
