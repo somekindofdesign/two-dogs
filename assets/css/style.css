@@ -119,7 +119,6 @@ header {
     display: inline-block;
     padding: 3em 0 2em 0;
     width: 100%;
-    height: auto;
 }
 
 #main-nav {
@@ -646,4 +645,34 @@ footer {
 
 .socials i:hover {
     opacity: .75;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+    #header {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 976px) {
+    #cover-text {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 703px) {
+    #cover-text {
+        top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 448px) {
+    #cover-text {
+        margin: auto;
+    }
+
 }
