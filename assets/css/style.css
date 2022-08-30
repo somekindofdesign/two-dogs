@@ -467,6 +467,10 @@ form {
     list-style: none;
 }
 
+*:focus {
+    outline: none;
+    }
+
 input[type="text"], select {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -509,6 +513,7 @@ input[type="email"]:focus {
 
 input[type="text"]:active, select:active {
     border: 1px solid #001F3F;
+    appearance: none;
 }
 
 input[type="email"]:active {
