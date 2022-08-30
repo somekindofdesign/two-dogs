@@ -36,7 +36,7 @@
         <h2>Get updates about Wreckless Eric and Baby Jim straight to your inbox</h2>
     </section>
     <article id="sign-up-form">
-        <form method="POST" action="https://formdump.codeinstitute.net/">
+        <form method="POST" action="https://formdump.codeinstitute.net/" target="_blank">
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Type your full name" required><br>
                 <label for="email">Email</label><br>
@@ -59,14 +59,12 @@
                 <div class="custom-select">
                     <label for="dog-feelings">How do you feel about dogs?</label>
                     <select id="dog-feelings" name="dog-feelings">
-                        <option value="dont-deverve">We don't deserve them</option>
+                        <option value="dont-deserve">We don't deserve them</option>
                         <option value="best-friend">They're man's best friend</option>
                         <option value="their-day">Every dog has their day</option>
                     </select>
                 </div>
-                <div>
-                <input class="button btn-maroon" type="submit" id="submit" name="submit">
-                    </div>
+                <button class="btn-maroon" type="submit" id="submit" name="submit" onclick="window.location.href = 'success.html';">Sign me up!</button>
             </form>
         <div><img src="assets/images/sign-up-form.png" alt="large dog lying on cough looking at small naked dog"></div>
     </article>
