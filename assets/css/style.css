@@ -399,7 +399,6 @@ td {
 
 #blog-post {
     width: 60%;
-    padding: 3em;
     margin: auto;
 }
 
@@ -418,6 +417,18 @@ ol {
 #blog div {
     width: 40%;
     border-radius: 5px;
+}
+
+.img-text {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    align-items:center;
+}
+
+.img-text p {
+    padding-left: 3em;
 }
 
 
@@ -579,7 +590,7 @@ label {
 /* back to top */
 
 .back-to-top {
-    margin: 1em;
+    margin: 2em 0 2em 0;
     display: flex;
     justify-content: center;
 }
