@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5{
 
 a {
     text-decoration: none;
-    color: #001F3F;
+    color: inherit;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
@@ -94,7 +94,7 @@ button:hover {
 }
 
 .btn-orange {
-    color: #85144B;
+    color: #001F3F;
     background-color: #FF851B;
 }
 
