@@ -36,40 +36,38 @@
         <h2>Get updates about Wreckless Eric and Baby Jim straight to your inbox</h2>
     </section>
     <article id="sign-up-form">
-        <div>
-            <form method="POST" action="https://formdump.codeinstitute.net/">
+        <form method="POST" action="https://formdump.codeinstitute.net/">
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Type your full name" required><br>
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="eg name@emailaddress.com">
+                <input type="email" id="email" name="email" placeholder="eg name@emailaddress.com" required>
                 <div id="radio-group">
-                <p>I want to be updated...</p>
-                <label for="daily" class="container">Daily
+                    <p>I want to be updated...</p>
+                    <label for="daily" class="container">Daily
                     <input id="daily" type="radio" checked="checked" name="blog-frequency" value="daily" required>
                     <span class="radio"></span>
-                  </label>
-                  <label for="weekly" class="container">Weekly
+                    </label>
+                    <label for="weekly" class="container">Weekly
                     <input id="weekly" type="radio" name="blog-frequency" value="weekly">
                     <span class="radio"></span>
-                  </label>
-                  <label for="monthly" class="container">Monthly
+                    </label>
+                    <label for="monthly" class="container">Monthly
                     <input id="monthly" type="radio" name="blog-frequency" value="monthly">
                     <span class="radio"></span>
-                  </label>
-                </div>
+                    </label>
+                        </div>
                 <div class="custom-select">
                     <label for="dog-feelings">How do you feel about dogs?</label>
                     <select id="dog-feelings" name="dog-feelings">
                         <option value="dont-deverve">We don't deserve them</option>
-                        <option value="best-friend">Man's best friend</option>
+                        <option value="best-friend">They're man's best friend</option>
                         <option value="their-day">Every dog has their day</option>
                     </select>
                 </div>
-                <div id="submit-button">
-                <input class="btn-maroon" type="submit" id="submit" name="submit">
-            </div>
+                <div>
+                <input class="button btn-maroon" type="submit" id="submit" name="submit">
+                    </div>
             </form>
-        </div>
         <div><img src="assets/images/sign-up-form.png" alt="large dog lying on cough looking at small naked dog"></div>
     </article>
     <footer>

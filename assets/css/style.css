@@ -460,11 +460,6 @@ ol {
     padding: 0 3em 0 3em;
 }
 
-#sign-up-form div {
-    width: 50%;
-    box-sizing: border-box;
-}
-
 
 /* sign up form*/
 
@@ -476,30 +471,52 @@ form {
     list-style: none;
 }
 
-input {
+input[type="text"], select {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
     color: #585160;
     border: 1px solid #DEDCDF;
     border-radius: 3px;
     padding: 1em .5em 1em .5em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
-input:hover {
-    border: 1px solid #FF851B;
-}
-
-select {
-    width: 75%
-    color: #585160;
+input[type="email"] {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    color: #585160;
     border: 1px solid #DEDCDF;
     border-radius: 3px;
-    padding: 1em;
-    margin-bottom: 1em;
+    padding: 1em .5em 1em .5em;
+    margin-bottom: 2em;
 }
 
-select:hover {
+input[type="text"]:hover, select:hover {
     border: 1px solid #FF851B;
+}
+
+input[type="email"]:hover {
+    border: 1px solid #FF851B;
+}
+
+input[type="text"]:focus, select:focus {
+    border: 1px solid #001F3F;
+}
+
+input[type="email"]:focus {
+    border: 1px solid #001F3F;
+}
+
+input[type="text"]:active, select:active {
+    border: 1px solid #001F3F;
+}
+
+input[type="email"]:active {
+    border: 1px solid #001F3F;
 }
 
 ::placeholder {
@@ -516,6 +533,7 @@ label {
 }
 
 #radio-group {
+    width: 100%;
     padding-bottom: 1em;
 }
 
@@ -585,7 +603,7 @@ label {
     border-radius: 50%;
     background: #FF851B;
   }
-  
+
 
 /* back to top */
 
