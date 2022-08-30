@@ -154,8 +154,6 @@ header {
     font-family: Arvo, Cambria, Cochin, serif;
     letter-spacing: 4px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
   
   #logo i {
@@ -621,7 +619,7 @@ label {
     box-sizing: border-box;
     padding: 2em 3em 2em 3em;
     background-color: #FF851B;
-    display: inline-block;
+    display: flex;
 }
 
 #sign-up-banner button {
@@ -656,7 +654,7 @@ footer {
 
 @media screen and (max-width: 992px) {
     #header {
-        display: block;
+        display: flex;
     }
 
 }
