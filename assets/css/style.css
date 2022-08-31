@@ -12,7 +12,6 @@ body {
     font-weight: 400;
     line-height: 1.8em;
     color: #585160;
-    max-width: 1280px; 
 	margin: 0 auto !important; 
 	float: none !important; 
 }
@@ -104,6 +103,12 @@ button:hover {
     font-weight: 700;
 }
 
+/* img */
+
+img {
+    width: 100%;
+}
+
 
 /*hr*/
 
@@ -116,9 +121,10 @@ hr {
 /* header (main navigation, logo, sign up buton) */
 
 header {
-    display: inline-block;
+    display: flex;
     padding: 3em 0 2em 0;
-    width: 100%;
+    max-width: 1280px;
+    margin: auto;
 }
 
 #main-nav {
@@ -171,6 +177,8 @@ header button {
 
 #page-title {
     padding: 3em;
+    max-width: 1280px;
+    margin: auto;
 }
 
 #page-title h2 {
@@ -191,6 +199,7 @@ header button {
 
 #cover-text {
     width: 50%;
+    max-width: 1280px;
     background: transparent;
     top: 30%;
     left: 3rem;
@@ -242,6 +251,8 @@ header button {
 #about-breeds-heading {
     text-align: center;
     padding: 0 3em 0 3em;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .breeds {
@@ -251,6 +262,7 @@ header button {
     padding: 0 4em 0 4em;
     text-align: center;
     box-sizing: border-box;
+    max-width: 426px;
 }
 
 #about-breeds h2 {
@@ -284,6 +296,7 @@ header button {
 
 #meet div {
     width: 50%;
+    max-width: 640px;
     border-radius: 5px;
 }
 
@@ -301,6 +314,7 @@ header button {
 
 #dog-profiles {
     width: 100%;
+    max-width: 1280px;
     box-sizing: border-box;
     margin: 3em 0 3em 0;
     display: flex;
@@ -352,10 +366,11 @@ td {
 
 #latest-post {
     width: 100%;
+    max-width: 1280px;
     box-sizing: border-box;
-    padding: 0 3em 0 3em;
+    padding: 0 3em 3em 3em;
     background-color: #ffffff;
-    margin: 0 0 3em 0;
+    margin: auto;
     display: flex;
     align-items:center;
 }
@@ -392,7 +407,7 @@ td {
   }
 
 #blog-post {
-    width: 60%;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -409,7 +424,7 @@ ol {
 }
 
 #blog div {
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
 }
 
@@ -422,7 +437,7 @@ ol {
 }
 
 .img-text p {
-    padding-left: 3em;
+    padding-left: 1em;
 }
 
 
@@ -433,7 +448,7 @@ ol {
     box-sizing: border-box;
     clear: both;
     line-height: 0;
-    column-count: 3;
+    column-count: 4;
     column-gap: 8px;
 }
 
@@ -447,6 +462,7 @@ ol {
 
 #sign-up-form {
     width: 100%;
+    max-width: 1280px;
     box-sizing: border-box;
     background-color: #ffffff;
     display: flex;
@@ -620,6 +636,11 @@ label {
     padding: 2em 3em 2em 3em;
     background-color: #FF851B;
     display: flex;
+}
+
+#sign-up-banner div {
+    max-width: 1280px;
+    margin: auto;
 }
 
 #sign-up-banner button {
