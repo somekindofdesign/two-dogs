@@ -198,15 +198,14 @@ header button {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 3em;
 }
 
 #cover-text {
-    width: 50%;
+    width: 100%;
     max-width: 1280px;
     background: transparent;
     top: 30%;
-    left: 3rem;
+    left: 6rem;
     position: absolute;
 }
 
@@ -296,6 +295,7 @@ header button {
     background-color: #85144B;
     display: flex;
     align-items:center;
+    gap: 2em;
 }
 
 #meet div {
@@ -372,11 +372,12 @@ td {
     width: 100%;
     max-width: 1280px;
     box-sizing: border-box;
-    padding: 0 3em 3em 3em;
+    padding: 3em;
     background-color: #ffffff;
     margin: auto;
     display: flex;
     align-items:center;
+    gap: 2em;
 }
 
 #latest-post div {
@@ -472,6 +473,7 @@ ol {
     display: flex;
     align-items:center;
     padding: 0 3em 0 3em;
+    gap: 2em;
 }
 
 
@@ -481,7 +483,6 @@ form {
     border: 1px solid #85144B;
     border-radius: 5px;
     padding: 2em;
-    margin-right: 3em;
     list-style: none;
 }
 
@@ -640,6 +641,7 @@ label {
     padding: 2em 3em 2em 3em;
     background-color: #FF851B;
     display: flex;
+    gap: 2em;
 }
 
 #sign-up-banner div {
