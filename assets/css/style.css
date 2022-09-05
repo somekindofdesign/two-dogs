@@ -122,13 +122,15 @@ hr {
 
 header {
     display: flex;
-    padding: 3em 0 2em 0;
+    padding: 2em 0 2em 0;
     max-width: 1280px;
     margin: auto;
+    height: 4em;
 }
 
 header div, nav {
     width: 33%;
+    margin: auto;
 }
 
 #main-nav {
@@ -161,13 +163,14 @@ header div, nav {
     font-size: 4rem;
     font-weight: 700;
     font-family: Arvo, Cambria, Cochin, serif;
-    letter-spacing: 4px;
-    display: flex;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    width: 33.33%;
+    margin: auto;
 }
-  
+
   #logo i {
     font-size: 2.8rem;
-    text-align: center;
 }
 
 header button {
