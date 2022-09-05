@@ -476,9 +476,10 @@ ol {
     max-width: 1280px;
     box-sizing: border-box;
     background-color: #ffffff;
+    margin: auto;
     display: flex;
     align-items:center;
-    padding: 0 3em 0 3em;
+    justify-content: center;
     gap: 2em;
 }
 
