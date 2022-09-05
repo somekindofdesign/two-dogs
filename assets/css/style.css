@@ -101,6 +101,7 @@ button:hover {
     color: #85144B;
     text-decoration: underline;
     font-weight: 700;
+    display: flex;
 }
 
 /* img */
@@ -129,7 +130,7 @@ header {
 }
 
 header div, nav {
-    width: 33%;
+    width:25%;
     margin: auto;
 }
 
@@ -165,7 +166,7 @@ header div, nav {
     font-family: Arvo, Cambria, Cochin, serif;
     letter-spacing: 0.25rem;
     text-align: center;
-    width: 33.33%;
+    width: 50%;
     margin: auto;
 }
 
@@ -181,7 +182,7 @@ header button {
 /* page titles */
 
 #page-title {
-    padding: 3em;
+    padding: 3em 0 3em 0;
     max-width: 1280px;
     margin: auto;
 }
@@ -247,6 +248,7 @@ header button {
     background-size: cover;
     width: 100%;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 #about-breeds-heading {
@@ -644,9 +646,7 @@ label {
 /* back to top */
 
 .back-to-top {
-    margin: 2em 0 2em 0;
-    display: flex;
-    justify-content: center;
+    padding: 2em 0 2em 0;
 }
 
 /*sign up banner*/
@@ -696,6 +696,12 @@ footer {
 }
 
 /* media queries */
+
+@media screen and (max-width: 1376px) {
+    header, #latest-post, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
 
 @media screen and (max-width: 992px) {
     #header {
