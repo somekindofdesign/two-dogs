@@ -376,7 +376,7 @@ td {
     width: 100%;
     max-width: 1280px;
     box-sizing: border-box;
-    padding: 3em;
+    padding: 3em 0 3em 0;
     background-color: #ffffff;
     margin: auto;
     display: flex;
@@ -397,18 +397,23 @@ td {
     padding-bottom: 1rem;
 }
 
-.post-listing {
-    background-color: white;
-    padding: 3rem;
-    margin-top: 1rem;
-    float: left;
-    width: 33%;
+#blog-gallery {
+    width: 100%;
+    max-width: 1280px;
     box-sizing: border-box;
-  }
+    clear: both;
+    column-count: 3;
+    column-gap: 2em;
+    margin: auto;
+}
 
-  .post-listing p {
-    margin-bottom: 1rem;
-  }
+#blog-gallery div {
+    padding-bottom: 3em;
+}
+
+#blog-gallery p {
+    padding-bottom: 1em;
+}
 
   .blog-img {
     width: 100%;
@@ -460,7 +465,7 @@ ol {
     clear: both;
     line-height: 0;
     column-count: 4;
-    column-gap: 8px;
+    column-gap: 0.5em;
     margin: auto;
 }
 
