@@ -484,6 +484,9 @@ ol {
     gap: 2em;
 }
 
+#sign-up-form div {
+    width: 50%;
+}
 
 /* sign up form*/
 
@@ -631,6 +634,8 @@ label {
     border-radius: 50%;
     background: #FF851B;
   }
+
+  sign-up
 
 
 /* back to top */
