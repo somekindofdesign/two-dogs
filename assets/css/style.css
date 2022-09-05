@@ -127,6 +127,10 @@ header {
     margin: auto;
 }
 
+header div, nav {
+    width: 33%;
+}
+
 #main-nav {
     font-size: 1rem;
     margin-left: 3em;
