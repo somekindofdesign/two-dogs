@@ -418,6 +418,7 @@ td {
 #blog-post {
     max-width: 700px;
     margin: auto;
+    padding-top: 3em;
 }
 
 ol {
