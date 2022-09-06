@@ -293,7 +293,6 @@ header button {
     max-width: 1280px;
     margin: auto;
     text-align: center;
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 4em;
@@ -698,7 +697,7 @@ footer {
 .socials i {
     font-size: 1.5em;
     color: #001F3F;
-    padding-right: 3rem;
+    padding: 0 2em 0 2em;
 }
 
 .socials i:hover {
@@ -755,8 +754,8 @@ footer {
 
 }
 
-@media screen and (min-width: 601px) {
-    #two-column, #meet {
+@media screen and (min-width: 768px) {
+    #two-column, #meet, .breeds {
         display: flex;
     }
 
