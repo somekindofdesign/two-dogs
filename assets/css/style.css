@@ -182,7 +182,7 @@ header button {
 /* page titles */
 
 #page-title {
-    padding: 3em 0 3em 0;
+    padding: 3em 0 2em 0;
     max-width: 1280px;
     margin: auto;
 }
@@ -697,6 +697,10 @@ footer {
         display: flex;
     }
 
+    #gallery {
+        column-count: 3;
+    }
+
 }
 
 @media screen and (max-width: 976px) {
@@ -707,15 +711,34 @@ footer {
 }
 
 @media screen and (max-width: 703px) {
+    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
     #cover-text {
         top: 25%;
+    }
+
+    #gallery {
+        column-count: 2;
     }
 
 }
 
 @media screen and (max-width: 448px) {
+    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
     #cover-text {
         margin: auto;
     }
+
+    #gallery {
+        column-count: 1;
+    }
+
 
 }
