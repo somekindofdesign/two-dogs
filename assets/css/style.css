@@ -247,13 +247,11 @@ header button {
     padding: 3em 0 3em 0;
     background: #ffffff;
     margin: auto;
-    display: flex;
     align-items:center;
     gap: 2em;
 }
 
 #two-column div {
-    width: 50%;
     height: 100%;
     border-radius: 5px;
 }
@@ -322,19 +320,17 @@ header button {
 /*meet the two dogs page*/
 
 #meet {
-    width: 100%;
     max-width: 1280px;
+    width: 100%;
     box-sizing: border-box;
     padding: 3em;
     margin: auto;
-    display: flex;
     align-items:center;
     gap: 2em;
     background-color: #85144B;
 }
 
 #meet div {
-    width: 50%;
     height: 100%;
     border-radius: 5px;
 }
@@ -759,7 +755,23 @@ footer {
 
 }
 
+@media screen and (min-width: 601px) {
+    #two-column, #meet {
+        display: flex;
+    }
+
+    #two-column div, #meet div {
+        width: 50%;
+    }
+
+}
+
 @media screen and (max-width: 448px) {
+    
+    button {
+        width: 100%;
+    }
+    
     header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
         padding-left: 1em;
         padding-right: 1em;
@@ -767,6 +779,10 @@ footer {
 
     #cover-text {
         margin: auto;
+    }
+
+    #gallery {
+        column-count: 1;
     }
 
 }
