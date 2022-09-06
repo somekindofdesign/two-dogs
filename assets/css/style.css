@@ -357,7 +357,6 @@ header button {
     max-width: 1280px;
     box-sizing: border-box;
     margin: auto;
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 10em;
@@ -369,7 +368,8 @@ header button {
 }
 
 .single-profiles {
-    width: 50%;
+    width: 80%;
+    margin: auto;
     padding: 3em 0 3em 0;
 }
 
@@ -492,14 +492,9 @@ ol {
     box-sizing: border-box;
     background-color: #ffffff;
     margin: auto;
-    display: flex;
     align-items:center;
     justify-content: center;
     gap: 2em;
-}
-
-#sign-up-form div {
-    width: 50%;
 }
 
 /* sign up form*/
@@ -734,7 +729,7 @@ footer {
 
 }
 
-@media screen and (max-width: 703px) {
+@media screen and (max-width: 768px) {
     header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
         padding-left: 2em;
         padding-right: 2em;
@@ -755,11 +750,11 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    #two-column, #meet, .breeds {
+    #two-column, #meet, .breeds, #dog-profiles, #sign-up-form {
         display: flex;
     }
 
-    #two-column div, #meet div {
+    #two-column div, #meet div, #sign-up-form div {
         width: 50%;
     }
 
