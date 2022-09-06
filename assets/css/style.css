@@ -506,6 +506,7 @@ form {
     list-style: none;
 }
 
+
 *:focus {
     outline: none;
     }
@@ -573,8 +574,12 @@ label {
 }
 
 #radio-group {
-    width: 100%;
     padding-bottom: 1em;
+}
+
+#radio-group div {
+    width: 100%;
+    margin-right: 0;
 }
 
 #radio-group p {
