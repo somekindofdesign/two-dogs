@@ -701,6 +701,10 @@ footer {
         column-count: 3;
     }
 
+    #blog-gallery {
+        column-count: 2;
+    }
+
 }
 
 @media screen and (max-width: 976px) {
@@ -724,6 +728,10 @@ footer {
         column-count: 2;
     }
 
+    #blog-gallery {
+        column-count: 1;
+    }
+
 }
 
 @media screen and (max-width: 448px) {
@@ -735,10 +743,5 @@ footer {
     #cover-text {
         margin: auto;
     }
-
-    #gallery {
-        column-count: 1;
-    }
-
 
 }
