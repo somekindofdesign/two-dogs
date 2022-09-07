@@ -108,6 +108,7 @@ button:hover {
 
 img {
     width: 100%;
+    border-radius: 5px;
 }
 
 
@@ -267,6 +268,7 @@ header button {
     height: 400px;
     object-fit: cover;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 #two-column p {
@@ -344,16 +346,10 @@ header button {
     background-color: #85144B;
 }
 
-#meet div {
-    height: 100%;
-    border-radius: 5px;
-}
-
 #meet img {
-    width: 100%;
-    height: 400px;
     object-fit: cover;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 #meet h2 {
@@ -437,7 +433,7 @@ td {
 
 #blog-gallery img {
     width: 100%;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
     height: 320px;
     object-fit: cover;
   }
@@ -467,7 +463,6 @@ ol {
 
 #blog div {
     width: 50%;
-    border-radius: 5px;
 }
 
 .img-text {
@@ -498,7 +493,7 @@ ol {
 
 #gallery > img {
     width: 100%;
-    padding-bottom: .5em;
+    margin-bottom: .5em;
 }
 
 
@@ -512,6 +507,7 @@ ol {
     margin: auto;
     align-items:center;
     justify-content: center;
+    gap: 2em;
 }
 
 /* sign up form*/
@@ -715,6 +711,18 @@ label {
 
 /* media queries */
 
+@media screen and (min-width: 1024px) {
+    
+    #meet {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    #meet {
+        display: flex;
+    }
+
+
 @media screen and (max-width: 992px) {
     #header {
         display: flex;
@@ -733,12 +741,12 @@ label {
 
 @media screen and (min-width: 768px) {
     
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #dog-profiles, #meet, #sign-up-banner  {
+    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #dog-profiles, #sign-up-banner  {
         padding-left: 3em;
         padding-right: 3em;
     }
 
-    #two-column, #meet, .breeds, #dog-profiles, #sign-up-form, #sign-up-banner {
+    #two-column, .breeds, #dog-profiles, #sign-up-form, #sign-up-banner {
         display: flex;
     }
 
