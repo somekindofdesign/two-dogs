@@ -31,7 +31,6 @@ body {
     .full-width-background > img {
         width: 50%;
         max-width: 640px;
-        height: auto;
         object-fit: cover;
         overflow: hidden;
         border-radius: 5px;
