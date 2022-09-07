@@ -287,6 +287,7 @@ header button {
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
+    padding: 0 3em 0 3em;
 }
 
 #about-breeds-heading {
@@ -726,11 +727,13 @@ label {
         display: flex;
     }
 
+    #about-breeds {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
 
 @media screen and (max-width: 992px) {
-    #header {
-        display: flex;
-    }
 
     #gallery {
         column-count: 3;
@@ -766,15 +769,12 @@ label {
 
 
 @media screen and (max-width: 768px) {
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
-        padding-left: 2em;
-        padding-right: 2em;
+    
+    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #sign-up-banner  {
+        padding-left: 1em;
+        padding-right: 1em;
     }
     
-    #cover-text {
-        top: 25%;
-    }
-
     #gallery {
         column-count: 2;
     }
@@ -793,14 +793,12 @@ label {
 
     #blog-img {
         padding-bottom: 1em;
-    
     }
 
     .single-profiles {
         width: 100%;
         margin: 0;
     }
-
 
 }
 
