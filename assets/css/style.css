@@ -660,8 +660,6 @@ label {
     background: #FF851B;
   }
 
-  sign-up
-
 
 /* back to top */
 
@@ -676,7 +674,6 @@ label {
     box-sizing: border-box;
     padding: 2em 3em 2em 3em;
     background-color: #FF851B;
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 2em;
@@ -685,10 +682,6 @@ label {
 #sign-up-banner div {
     max-width: 1280px;
     margin: auto;
-}
-
-#sign-up-banner button {
-    float: right;
 }
 
 
@@ -761,21 +754,29 @@ footer {
         margin-bottom: 3em;
     }
 
+    #sign-up-banner h3 {
+        padding-bottom: 1em;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
     
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #dog-profiles, #meet  {
+    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #dog-profiles, #meet, #sign-up-banner  {
         padding-left: 3em;
         padding-right: 3em;
     }
 
-    #two-column, #meet, .breeds, #dog-profiles, #sign-up-form {
+    #two-column, #meet, .breeds, #dog-profiles, #sign-up-form, #sign-up-banner {
         display: flex;
     }
 
     #two-column div, #meet div, #sign-up-form div {
         width: 50%;
+    }
+
+    #sign-up-banner button {
+        float: right;
     }
 
 }
