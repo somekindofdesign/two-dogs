@@ -22,7 +22,6 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 3em;
-    display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -48,7 +47,6 @@ body {
     max-width: 1280px;
     box-sizing: border-box;
     padding: 3em;
-    display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -102,7 +100,6 @@ p {
 .caption {
     color: #FF851B;
     text-transform: uppercase;
-    padding-bottom: 1rem;
 }
 
 
@@ -173,10 +170,9 @@ hr {
 }
 
 
-/* header (main navigation, logo, sign up button) */
+/* header (main navigation and logo) */
 
 header {
-    display: flex;
     padding: 3em;
     width: 100%;
     max-width: 1280px;
@@ -225,9 +221,9 @@ header div, nav {
     margin: auto;
 }
 
-  #logo i {
-    font-size: 2.8rem;
-}
+    #logo i {
+        font-size: 2.8rem;
+    }
 
 header button {
     float: right;
@@ -304,11 +300,13 @@ header button {
     background-size: cover;
     width: 100%;
     overflow: hidden;
+    padding: 2em;
+    box-sizing: border-box;
 }
 
     #about-breeds-heading {
         text-align: center;
-        padding: 3em;
+        padding-bottom: 3em;
         max-width: 1280px;
         margin: auto;
     }
@@ -332,7 +330,6 @@ header button {
 .breeds {
     width: 100%;
     max-width: 1216px;
-    display: flex;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -408,8 +405,9 @@ td {
     max-width: 1280px;
     box-sizing: border-box;
     clear: both;
+    line-height: 0;
     column-count: 3;
-    column-gap: 2em;
+    column-gap: 0.5em;
     margin: auto;
 }
 
@@ -673,6 +671,7 @@ label {
     opacity: .75;
 }
 
+
 /* media queries */
 
 @media screen and (max-width: 1344px) {
@@ -680,4 +679,54 @@ label {
         padding: 3em 3em 2em 3em;
     }
     
+}
+
+
+@media screen and (max-width: 768px) {
+    #page-title, .max-width-background, .full-width-background {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #gallery, #blog-gallery {
+        column-count: 2;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    header, .breeds {
+        display: flex;
+        padding: 0 2em 0 2em;
+        box-sizing: border-box;
+    }
+   
+}
+
+
+@media screen and (min-width: 426px) {
+    .max-width-background, .full-width-background {
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    #page-title, .max-width-background {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .max-width-background > div, .max-width-background > img, .full-width-background > div, .full-width-background > img, button {
+        width: 100%;
+    }
+
+    #sign-up-banner h3 {
+        padding-bottom: 1em;
+    }
+
+    #gallery, #blog-gallery {
+        column-count: 1;
+    }
+
 }
