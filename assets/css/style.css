@@ -57,7 +57,7 @@ body {
     
     .max-width-background > img {
         width: 50%;
-        height: auto;
+        height: 400px;
         object-fit: cover;
         overflow: hidden;
         border-radius: 5px;
@@ -71,12 +71,10 @@ body {
 
 h1 {
     font-size: 3.05rem;
-    padding-bottom: 1rem;
 }
 
 h2 {
     font-size: 2.44375rem;
-    padding-bottom: 1rem;
 }
 
 h3 {
@@ -95,6 +93,10 @@ a {
     color: inherit;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1rem;
+}
+
+p {
+    padding-bottom: 1rem;
 }
 
 .caption {
@@ -163,26 +165,22 @@ img {
 }
 
 
-/*hr and table*/
+/*hr*/
 
 hr {
     border: 1px solid #DEDCDF;
     width: 100%;
 }
 
-tr {
-    vertical-align: top;
-}
 
-
-/* header (main navigation, logo, sign up buton) */
+/* header (main navigation, logo, sign up button) */
 
 header {
     display: flex;
-    padding: 3em 0 2em 0;
+    padding: 3em;
     width: 100%;
-    box-sizing: border-box;
     max-width: 1280px;
+    box-sizing: border-box;
     margin: auto;
 }
 
@@ -239,7 +237,7 @@ header button {
 /* page titles */
 
 #page-title {
-    padding: 3em 0 2em 0;
+    padding: 2em 3em 2em 3em;
     width: 100%;
     box-sizing: border-box;
     max-width: 1280px;
@@ -308,38 +306,38 @@ header button {
     overflow: hidden;
 }
 
-#about-breeds-heading {
-    text-align: center;
-    padding: 0 3em 0 3em;
-    max-width: 1280px;
-    margin: auto;
-}
+    #about-breeds-heading {
+        text-align: center;
+        padding: 3em;
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    #about-breeds h2 {
+        color: #85144B;
+        text-align: center;
+    }
+
+    #about-breeds h3 {
+        padding: 0.5rem 0 0.5rem 0;
+        text-align: center;
+    }
+
+    #about-breeds p {
+        color: #585160;
+        font-weight: 700;
+        padding-bottom: 3rem;
+    }
 
 .breeds {
     width: 100%;
     max-width: 1216px;
+    display: flex;
     margin: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 4em;
-}
-
-#about-breeds h2 {
-    color: #85144B;
-    padding-top: 2rem;
-    text-align: center;
-}
-
-#about-breeds h3 {
-    padding: 0.5rem 0 0.5rem 0;
-    text-align: center;
-}
-
-#about-breeds p {
-    color: #585160;
-    font-weight: 700;
-    padding-bottom: 3rem;
 }
 
 
@@ -396,6 +394,7 @@ header button {
 tr {
     text-align: left;
     padding-bottom: 1rem;
+    vertical-align: top;
 }
 
 td {
@@ -677,7 +676,7 @@ label {
 /* media queries */
 
 @media screen and (max-width: 1344px) {
-    header, #page-title {
+    #page-title {
         padding: 3em 3em 2em 3em;
     }
     
