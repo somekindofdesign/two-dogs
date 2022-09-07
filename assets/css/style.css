@@ -510,6 +510,10 @@ ol {
     gap: 2em;
 }
 
+#sign-up-form img {
+    object-fit: contain;
+}
+
 /* sign up form*/
 
 form {
