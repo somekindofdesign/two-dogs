@@ -16,6 +16,57 @@ body {
 	float: none !important; 
 }
 
+/* containers */
+
+.full-width-background {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3em;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2em
+    }
+
+    .full-width-background img {
+        width: 50%;
+        max-width: 640px;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .full-width-background div {
+        max-width: 640px;
+        width: 50%;
+    }
+
+.max-width-background {
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 3em;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2em
+        }
+    
+    .max-width-background img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    
+    .max-width-background div {
+        width: 50%;
+    }
+
 /* type */
 
 h1 {
@@ -245,37 +296,6 @@ header button {
     }
 
 
-/* two column container with image and text */
-
-#two-column {
-    width: 100%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    padding: 3em 0 3em 0;
-    background: #ffffff;
-    margin: auto;
-    align-items:center;
-    gap: 2em;
-}
-
-#two-column div {
-    height: 100%;
-    border-radius: 5px;
-}
-
-#two-column img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-#two-column p {
-    padding-bottom: 1rem;
-}
-
-
 /*learn about breeds section*/
 
 #about-breeds {
@@ -286,8 +306,6 @@ header button {
     background-size: cover;
     width: 100%;
     overflow: hidden;
-    box-sizing: border-box;
-    padding: 0 3em 0 3em;
 }
 
 #about-breeds-heading {
@@ -327,39 +345,17 @@ header button {
 
 /*meet the two dogs page*/
 
-#meet-container {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 3em;
-    margin: auto;
-    align-items:center;
-    gap: 2em;
-    background-color: #85144B;
-}
-
 #meet {
-    width: 100%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    margin: auto;
-    align-items:center;
-    gap: 2em;
     background-color: #85144B;
 }
 
-#meet img {
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 5px;
-}
+    #meet h2 {
+        color: #FF851B;
+    }
 
-#meet h2 {
-    color: #FF851B;
-}
-
-#meet p {
-    color: #ffffff;
-}
+    #meet p {
+        color: #ffffff;
+    }
 
 
 /* dog profiles section */
@@ -498,23 +494,6 @@ ol {
 }
 
 
-/*sign up page*/
-
-#sign-up-form {
-    width: 100%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    margin: auto;
-    align-items:center;
-    justify-content: center;
-    gap: 2em;
-}
-
-#sign-up-form img {
-    object-fit: contain;
-}
-
 /* sign up form*/
 
 form {
@@ -523,7 +502,6 @@ form {
     padding: 2em;
     list-style: none;
 }
-
 
 *:focus {
     outline: none;
@@ -677,13 +655,7 @@ label {
 /*sign up banner*/
 
 #sign-up-banner {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2em 3em 2em 3em;
     background-color: #FF851B;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
 }
 
 #sign-up-banner div {
@@ -710,116 +682,4 @@ label {
 
 .socials i:hover {
     opacity: .75;
-}
-
-
-
-/* media queries */
-
-@media screen and (min-width: 1024px) {
-    
-    #meet {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
-
-    #meet {
-        display: flex;
-    }
-
-    #about-breeds {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
-
-
-@media screen and (max-width: 992px) {
-
-    #gallery {
-        column-count: 3;
-    }
-
-    #blog-gallery {
-        column-count: 2;
-    }
-
-}
-
-
-@media screen and (min-width: 768px) {
-    
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #dog-profiles, #sign-up-banner  {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
-
-    #two-column, .breeds, #dog-profiles, #sign-up-form, #sign-up-banner {
-        display: flex;
-    }
-
-    #two-column div, #meet div, #sign-up-form div {
-        width: 50%;
-    }
-
-    #sign-up-banner button {
-        float: right;
-    }
-
-}
-
-
-@media screen and (max-width: 768px) {
-    
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #sign-up-banner  {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    
-    #gallery {
-        column-count: 2;
-    }
-
-    #blog-gallery {
-        column-count: 1;
-    }
-
-    form {
-        margin-bottom: 3em;
-    }
-
-    #sign-up-banner h3 {
-        padding-bottom: 1em;
-    }
-
-    #blog-img {
-        padding-bottom: 1em;
-    }
-
-    .single-profiles {
-        width: 100%;
-        margin: 0;
-    }
-
-}
-
-
-@media screen and (max-width: 448px) {
-    
-    button {
-        width: 100%;
-    }
-    
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #sign-up-banner, #meet-container, #dog-profiles  {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    #cover-text {
-        margin: auto;
-    }
-
-    #gallery {
-        column-count: 1;
-    }
-
 }
