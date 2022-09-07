@@ -41,6 +41,10 @@ body {
         width: 50%;
     }
 
+    .full-width-background iframe {
+        padding: -3em;
+    }
+
 .max-width-background {
     width: 100%;
     max-width: 1280px;
@@ -149,8 +153,10 @@ button:hover {
 .hyper-link {
     color: #85144B;
     text-decoration: underline;
+    text-align: center;
     font-weight: 700;
-    display: flex;
+    width: 100%;
+    margin: auto;
 }
 
 /* img */
@@ -175,7 +181,6 @@ header {
     padding: 3em;
     width: 100%;
     max-width: 1280px;
-    box-sizing: border-box;
     margin: auto;
 }
 
@@ -241,23 +246,56 @@ header button {
 
 #page-title h2 {
     color: #585160;
+    padding-bottom: 2rem;
 }
 
+#page-title h3 {
+    padding-bottom: 2rem;
+    color: #585160;
+}
+
+#page-title h3 > a {
+    text-decoration: underline;
+}
 
 /* hero image and text */
 
 /* hero -> Code Institute (25/08/22) Love Running Walkthrough Project  Creating the Hero Image https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/ */
+
 #hero-outer {
-    height: 600px;
     width: 100%;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
+#hero-image {
+    height: 560px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url('../images/wreckless_eric_baby_jim.jpg') no-repeat center center;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes hero-zoom {
+        from{
+            transform: scale(1.45);
+        }
+        to{
+            transform: scale(1.65);
+        }
+    }
+
+
 #cover-text {
+    text-align: center;
     max-width: 1280px;
-    top: 30%;
+    margin: auto;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 #cover-text h1 {
@@ -267,26 +305,8 @@ header button {
 #cover-text p {
     color: #ffffff;
     font-weight: 700;
-    padding-bottom: 1rem
+    padding-bottom: 2rem
 }
-
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url('../images/wreckless_eric_baby_jim.jpg') no-repeat center center;
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-    @keyframes hero-zoom {
-        from{
-            transform: scale(1);
-        }
-        to{
-            transform: scale(1.1);
-        }
-    }
 
 
 /*learn about breeds section*/
@@ -404,9 +424,9 @@ td {
     max-width: 1280px;
     box-sizing: border-box;
     clear: both;
-    line-height: 0;
     column-count: 3;
-    column-gap: 0.5em;
+    column-gap: 3em;
+    padding: 3em;
     margin: auto;
 }
 
@@ -673,18 +693,11 @@ label {
 
 /* media queries */
 
-@media screen and (max-width: 1344px) {
-    #page-title {
-        padding: 3em 3em 2em 3em;
-    }
-    
-}
-
-
 @media screen and (max-width: 768px) {
-    #page-title, .max-width-background, .full-width-background {
+    #page-title, #blog-gallery, .max-width-background, .full-width-background {
         padding-left: 2em;
         padding-right: 2em;
+        box-sizing: border-box;
     }
 
     #gallery, #blog-gallery {
@@ -694,12 +707,16 @@ label {
 }
 
 @media screen and (min-width: 769px) {
-    header, .breeds {
+    header {
+        display: flex;
+        box-sizing: border-box;
+    }
+   
+    .breeds {
         display: flex;
         padding: 0 2em 0 2em;
         box-sizing: border-box;
     }
-   
 }
 
 
@@ -711,9 +728,10 @@ label {
 }
 
 @media screen and (max-width: 425px) {
-    #page-title, .max-width-background {
+    #page-title, #blog-gallery, .max-width-background {
         padding-left: 1em;
         padding-right: 1em;
+        box-sizing: border-box;
     }
 
     .max-width-background > div, .max-width-background > img, .full-width-background > div, .full-width-background > img, button {
