@@ -428,17 +428,18 @@ td {
     margin: auto;
 }
 
-#blog-gallery div {
-    padding-bottom: 3em;
-}
-
 #blog-gallery p {
     padding-bottom: 1em;
 }
 
-  .blog-img {
+#blog-gallery img {
     width: 100%;
     padding-bottom: 1em;
+  }
+
+  #blog-gallery hr {
+    width: 100%;
+    margin-bottom: 3em;
   }
 
 #blog-post {
@@ -724,13 +725,6 @@ label {
 
 }
 
-@media screen and (max-width: 976px) {
-    #cover-text {
-        width: 75%;
-    }
-
-}
-
 @media screen and (max-width: 768px) {
     header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
         padding-left: 2em;
@@ -756,6 +750,9 @@ label {
     #sign-up-banner h3 {
         padding-bottom: 1em;
     }
+
+    #blog-img {
+        padding-bottom: 1em;
 
 }
 
@@ -786,7 +783,7 @@ label {
         width: 100%;
     }
     
-    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form  {
+    header, #two-column, #about-breeds, #page-title, #blog-gallery, #gallery, #sign-up-form, #sign-up-banner, #meet-container, #dog-profiles  {
         padding-left: 1em;
         padding-right: 1em;
     }
