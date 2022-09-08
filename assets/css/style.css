@@ -791,8 +791,26 @@ label {
 }
 
 
+@media screen and (max-width: 448px) {
+
+    header {
+        padding: 3em 1em 2em 1em;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        font-size: 3.5rem;
+    }
+
+    #logo i {
+        font-size: 2.5rem;
+    }
+
+}
+
+
 @media screen and (max-width: 425px) {
-    header, #page-title, #blog-gallery, #gallery, .max-width-background {
+    #page-title, #blog-gallery, #gallery, .max-width-background {
         padding: 1em;
         box-sizing: border-box;
     }
@@ -806,12 +824,56 @@ label {
         margin: auto;
     }
 
+}
+
+
+@media screen and (max-width: 346px) {
+
+    header {
+        padding: 2em 1em 2em 1em;
+        box-sizing: border-box;
+    }
+
     #logo {
         font-size: 3rem;
     }
 
     #logo i {
         font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 304px) {
+
+    header {
+        padding: 2em 1em 2em 1em;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        font-size: 2.5rem;
+    }
+
+    #logo i {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 261px) {
+
+    header {
+        padding: 2em 1em 2em 1em;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        font-size: 2rem;
+    }
+
+    #logo i {
+        font-size: 1rem;
     }
 
 }
