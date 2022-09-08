@@ -30,14 +30,12 @@ body {
 
     .full-width-background > img {
         width: 50%;
-        max-width: 640px;
         object-fit: cover;
         overflow: hidden;
         border-radius: 5px;
     }
 
     .full-width-background > div {
-        max-width: 640px;
         width: 50%;
     }
 
@@ -289,7 +287,10 @@ header button {
 
 #cover-text {
     text-align: center;
+    width: 100%;
     max-width: 1280px;
+    padding: 3em;
+    box-sizing: border-box;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -319,15 +320,15 @@ header button {
     background-size: cover;
     width: 100%;
     overflow: hidden;
-    padding: 2em;
     box-sizing: border-box;
 }
 
     #about-breeds-heading {
         text-align: center;
-        padding-bottom: 3em;
+        padding-top: 3em;
         max-width: 1280px;
         margin: auto;
+        padding: 3em 3em 0 3em;
     }
 
     #about-breeds h2 {
@@ -369,6 +370,20 @@ header button {
 
     #meet p {
         color: #ffffff;
+    }
+
+    #meet div, #meet img {
+        max-width: 640px;
+    }
+
+    #meet div {
+        padding-right: 3em;
+        box-sizing: border-box;
+    }
+
+    #meet img {
+        padding-left: 3em;
+        box-sizing: border-box;
     }
 
 
@@ -492,6 +507,7 @@ ol {
     column-count: 4;
     column-gap: 0.5em;
     margin: auto;
+    padding: 0 3em 0 3em;
 }
 
 #gallery > img {
@@ -694,7 +710,7 @@ label {
 /* media queries */
 
 @media screen and (min-width: 769px) {
-    header, .breeds {
+    .max-width-background, .full-width-background, header, .breeds, #sign-up-banner {
      display: flex;
      padding: 3em;
      box-sizing: border-box;
@@ -703,7 +719,7 @@ label {
 }
 
 @media screen and (max-width: 768px) {
-    #page-title, #blog-gallery, .max-width-background, .full-width-background {
+    #page-title, .breeds, #blog-gallery, #gallery, .max-width-background, .full-width-background {
         padding: 2em;
         box-sizing: border-box;
     }
@@ -717,28 +733,42 @@ label {
         column-count: 2;
     }
 
-}
-
-
-@media screen and (min-width: 426px) {
-    .max-width-background, .full-width-background {
-        display: flex;
-    }
-    
-}
-
-@media screen and (max-width: 425px) {
-    header, #page-title, #blog-gallery, .max-width-background {
-        padding: 1em;
-        box-sizing: border-box;
-    }
-
     header > div, #main-nav, .max-width-background > div, .max-width-background > img, .full-width-background > div, .full-width-background > img, button {
         width: 100%;
     }
 
     #sign-up-banner h3 {
         padding-bottom: 1em;
+    }
+
+    #meet div {
+        padding-right: 0;
+        box-sizing: border-box;
+        max-width: 768px;
+    }
+
+    #meet img {
+        padding-left: 0;
+        box-sizing: border-box;
+        max-width: 768px;
+        padding-bottom: 1em;
+    }
+
+    #meet h2 {
+        padding-bottom: 0.5em;
+    }
+
+    .single-profiles {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    header, #page-title, #blog-gallery, #gallery, .max-width-background {
+        padding: 1em;
+        box-sizing: border-box;
     }
 
     #gallery, #blog-gallery {
