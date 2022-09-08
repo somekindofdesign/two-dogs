@@ -818,15 +818,6 @@ label {
 }
 
 
-@media screen and (min-width: 505px) {
-    #main-nav {
-     display: flex;
-     box-sizing: border-box;
- }
-
-}
-
-
 @media screen and (max-width: 506px) {
     #main-nav li {
      padding: 1em;
@@ -864,6 +855,28 @@ label {
 }
 
 
+@media screen and (min-width: 377px) {
+    #main-nav {
+     display: flex;
+     box-sizing: border-box;
+ }
+
+}
+
+
+@media screen and (max-width: 376px) {
+    #main-nav {
+     text-align: center;
+ }
+
+     #main-nav ul {
+        display: inline-block;
+        text-align: left;
+     }
+
+}
+
+
 @media screen and (max-width: 346px) {
     header {
         padding: 2em 1em 2em 1em;
@@ -880,10 +893,6 @@ label {
 }
 
 @media screen and (max-width: 304px) {
-    header {
-        padding: 2em 1em 2em 1em;
-    }
-
     #logo {
         font-size: 2.5rem;
     }
