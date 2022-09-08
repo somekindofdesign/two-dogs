@@ -704,16 +704,6 @@ label {
 
 /* media queries */
 
-@media screen and (min-width: 769px) {
-    .max-width-background, .full-width-background, .breeds, #sign-up-banner {
-     display: flex;
-     padding: 3em;
-     box-sizing: border-box;
- }
-
-}
-
-
 @media screen and (min-width: 833px) {
     #main-nav {
         float: right;
@@ -747,14 +737,24 @@ label {
 
     #main-nav {
         justify-content: center;
-        display: flex;
-        width: 100%;
+        width: 90%;
         margin: auto;
+        box-sizing: border-box;
     }
 
       #main-nav li {
-         padding: 1em;
+        margin-right: 0; 
+        padding: 1em 3em 0 3em;
       }
+
+}
+
+
+@media screen and (min-width: 769px) {
+    .max-width-background, .full-width-background, .breeds, #sign-up-banner {
+     padding: 3em;
+     box-sizing: border-box;
+ }
 
 }
 
@@ -767,6 +767,8 @@ label {
 
     header {
         padding: 3em 1em 2em 1em;
+        width: 100%;
+        margin: auto;
         box-sizing: border-box;
     }
      
@@ -774,7 +776,7 @@ label {
         column-count: 2;
     }
 
-    #main-nav, .max-width-background > div, .max-width-background > img, .full-width-background > div, .full-width-background > img, button {
+    .max-width-background > div, .max-width-background > img, .full-width-background > div, .full-width-background > img, button {
         width: 100%;
     }
 
@@ -808,6 +810,28 @@ label {
         padding-bottom: 3em;
     }
 
+    #main-nav li {
+        margin-right: 0; 
+        padding: 1em 2em 0 2em;
+      }
+
+}
+
+
+@media screen and (min-width: 505px) {
+    #main-nav {
+     display: flex;
+     box-sizing: border-box;
+ }
+
+}
+
+
+@media screen and (max-width: 506px) {
+    #main-nav li {
+     padding: 1em;
+ }
+
 }
 
 
@@ -826,7 +850,6 @@ label {
 @media screen and (max-width: 425px) {
     #page-title, #blog-gallery, #gallery, .max-width-background {
         padding: 1em;
-        box-sizing: border-box;
     }
 
     #gallery, #blog-gallery {
@@ -844,7 +867,6 @@ label {
 @media screen and (max-width: 346px) {
     header {
         padding: 2em 1em 2em 1em;
-        box-sizing: border-box;
     }
 
     #logo {
@@ -860,7 +882,6 @@ label {
 @media screen and (max-width: 304px) {
     header {
         padding: 2em 1em 2em 1em;
-        box-sizing: border-box;
     }
 
     #logo {
@@ -869,22 +890,6 @@ label {
 
     #logo i {
         font-size: 1.5rem;
-    }
-
-}
-
-@media screen and (max-width: 261px) {
-    header {
-        padding: 2em 1em 2em 1em;
-        box-sizing: border-box;
-    }
-
-    #logo {
-        font-size: 2rem;
-    }
-
-    #logo i {
-        font-size: 1rem;
     }
 
 }
