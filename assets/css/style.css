@@ -20,6 +20,7 @@ body {
 
 .full-width-background {
     width: 100%;
+    display: inline-block;
     box-sizing: border-box;
     padding: 3em;
     margin: auto;
@@ -41,6 +42,7 @@ body {
 
 .max-width-background {
     width: 100%;
+    display: inline-block;
     max-width: 1280px;
     box-sizing: border-box;
     padding: 3em;
