@@ -66,6 +66,11 @@ body {
         width: 50%;
     }
 
+    table {
+        width: 80%;
+        margin: auto;
+    }
+
 /* type */
 
 h1 {
@@ -458,7 +463,15 @@ td {
 #blog-post {
     max-width: 700px;
     margin: auto;
-    padding-top: 3em;
+}
+
+#blog-post > img {
+    height: 320px;
+    object-fit: cover;
+}
+
+#blog-post div {
+    padding-top: 1em;
 }
 
 ol {
