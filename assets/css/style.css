@@ -246,7 +246,7 @@ header div, nav {
     color: #585160;
 }
 
-#page-title h3 > a {
+#page-title h3 > a , #page-title h2 > a {
     text-decoration: underline;
 }
 
