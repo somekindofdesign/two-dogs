@@ -100,6 +100,7 @@ p {
 }
 
 .caption {
+    font-size: 0.8rem;
     color: #FF851B;
     text-transform: uppercase;
 }
@@ -169,6 +170,7 @@ img {
 hr {
     border: 1px solid #DEDCDF;
     width: 100%;
+    margin-top: 1em;
 }
 
 
@@ -672,7 +674,8 @@ label {
 /* back to top */
 
 .back-to-top {
-    padding: 2em 0 2em 0;
+    padding: 3em 0 2em 0;
+    display: flex;
 }
 
 /*sign up banner*/
