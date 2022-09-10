@@ -481,7 +481,6 @@ ol {
     width: 100%;
     box-sizing: border-box;
     background-color: #ffffff;
-    display: flex;
     align-items:center;
 }
 
@@ -753,9 +752,13 @@ label {
 @media screen and (min-width: 769px) {
     .max-width-background, .full-width-background, .breeds, #sign-up-banner {
      padding: 3em;
+     display: flex;
      box-sizing: border-box;
  }
 
+ .img-text {
+    display: flex;
+    box-sizing: border-box;
 }
 
 
