@@ -409,15 +409,14 @@ section {
         width: 50%;
     }
 
-.img-text {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    align-items:center;
+#blog-post {
+    max-width: 700px;
+    margin: auto;
 }
 
-    .img-text p {
-        padding-left: 1em;
+    #blog-post img {
+        height: 320px;
+        object-fit: cover;
     }
 
 
@@ -641,7 +640,7 @@ label {
 /* media queries */
 
 @media screen and (min-width: 768px) {
-    header, #sign-up-banner, .two-col, #sign-up-form {
+    header, #sign-up-banner, .two-col, #sign-up-form, .return-options {
       display: flex;
       width: 100%;
       max-width: 1280px;
@@ -694,6 +693,15 @@ label {
 
     #blog-gallery, #gallery {
             column-count: 2;
+    }
+
+    .img-text {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        align-items:center;
+        gap: 1em;
+        padding-bottom: 1em;
     }
 
     form, #sign-up-form img {
