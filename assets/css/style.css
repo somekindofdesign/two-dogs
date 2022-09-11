@@ -204,6 +204,7 @@ header > * {
 #page-title {
     padding: 1em;
     width: 100%;
+    max-width: 1280px;
     box-sizing: border-box;
     margin: auto;
 }
@@ -297,6 +298,7 @@ section {
 
 .two-col {
     align-items: center;
+    max-width: 1280px;
 }
 
     .two-col div, .two-col img {
@@ -325,6 +327,7 @@ section {
 
 .breeds {
     width: 100%;
+    max-width: 1280px;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -381,6 +384,8 @@ section {
 
 #blog-gallery {
     column-count: 1;
+    max-width: 1280px;
+    margin: auto;
 }
 
     #blog-gallery p {
@@ -422,6 +427,8 @@ section {
     line-height: 0;
     column-count: 1;
     padding: 0 1em 0 1em;
+    max-width: 1280px;
+    margin: auto;
 }
 
 #gallery > img {
@@ -431,6 +438,11 @@ section {
 
 
 /* sign up form*/
+
+#sign-up-form {
+    max-width: 1280px;
+    margin: auto;
+}
 
 form {
     border: 1px solid #85144B;
@@ -600,6 +612,10 @@ label {
     background-color: #FF851B;
 }
 
+    #sign-up-banner a {
+        width: auto;
+    }
+
 
 /*footer*/
 
@@ -625,7 +641,7 @@ label {
 /* media queries */
 
 @media screen and (min-width: 768px) {
-    #header, #sign-up-banner, .two-col {
+    #header, #sign-up-banner, .two-col, #sign-up-form {
       display: flex;
       width: 100%;
       margin: auto;
@@ -649,6 +665,13 @@ label {
             font-size: 2.5rem;
         }
 
+    .breeds {
+        display: flex;
+        box-sizing: border-box;
+        margin: auto;
+        gap: 1em;
+    }
+
     .dog-profiles {
         width: 65%;
         margin: auto;
@@ -656,6 +679,26 @@ label {
 
     #blog-gallery, #gallery {
             column-count: 2;
+    }
+
+    form, #sign-up-form img {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    #two-profiles {
+        display: flex;
+        max-width: 1280px;
+        margin: auto;
+        padding: 2em;
+    }
+    
+    .dog-profiles {
+        width: 45%;
+        margin: auto;
+    }
     }
 
 }
