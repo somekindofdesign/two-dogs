@@ -641,11 +641,17 @@ label {
 /* media queries */
 
 @media screen and (min-width: 768px) {
-    #header, #sign-up-banner, .two-col, #sign-up-form {
+    header, #sign-up-banner, .two-col, #sign-up-form {
       display: flex;
       width: 100%;
+      max-width: 1280px;
+      box-sizing: border-box;
       margin: auto;
       gap: 1em;
+    }
+
+    .btn {
+        width: auto;
     }
 
         .two-col div, .two-col img {
@@ -657,13 +663,22 @@ label {
             object-fit: cover;
         }
 
+        #main-nav li {
+            float: right;
+        }
+
     #logo {
         font-size: 4rem;
+        width: auto;
         }
 
         #logo i {
             font-size: 2.5rem;
         }
+
+    nav {
+        width: auto;
+    }
 
     .breeds {
         display: flex;
@@ -698,7 +713,6 @@ label {
     .dog-profiles {
         width: 45%;
         margin: auto;
-    }
     }
 
 }
