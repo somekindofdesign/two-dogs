@@ -292,7 +292,6 @@ section {
     }
 
     section h3 {
-        margin-bottom: 0.5em;
         height: auto;
     }
 
@@ -386,6 +385,7 @@ section {
     column-count: 1;
     max-width: 1280px;
     margin: auto;
+    display: block;
 }
 
     #blog-gallery p {
@@ -609,11 +609,10 @@ label {
 
 #sign-up-banner {
     background-color: #FF851B;
+    width: 100%;
+    align-content: center;
+    margin: auto;
 }
-
-    #sign-up-banner a {
-        width: auto;
-    }
 
 
 /*footer*/
@@ -640,7 +639,7 @@ label {
 /* media queries */
 
 @media screen and (min-width: 768px) {
-    header, #sign-up-banner, .two-col, #sign-up-form, .return-options {
+    header, .two-col, #sign-up-form, .return-options {
       display: flex;
       width: 100%;
       max-width: 1280px;
@@ -685,6 +684,10 @@ label {
         margin: auto;
         gap: 1em;
     }
+
+        .breeds p {
+            font-weight: 700;
+        }
 
     .dog-profiles {
         width: 65%;
