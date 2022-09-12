@@ -363,8 +363,14 @@ section {
 /* dog profiles */
 
 .dog-profiles {
-    padding-top 1em;
+    padding: 1em 0 1em 0;
 }
+
+    
+    .dog-profiles h3 {
+        text-align: center;
+        padding: 1em 0 0.5em 0;
+    }
 
 .circle-container {
     width: 240px;
@@ -397,6 +403,11 @@ section {
     margin: auto;
     display: block;
 }
+
+    #blog-gallery img {
+        height: 320px;
+        object-fit: cover;
+    }
 
     #blog-gallery p {
         padding-bottom: 1em;
@@ -655,29 +666,35 @@ label {
       max-width: 1280px;
       box-sizing: border-box;
       margin: auto;
-      gap: 1em;
+      padding: 3em;
+      gap: 3em;
+    }
+
+    #page-title, #about-breeds {
+        padding: 3em;
     }
 
     .btn {
         width: auto;
     }
 
-        .two-col div, .two-col img {
-            width: 50%;
-            box-sizing: border-box;
-        }
+    .two-col div, .two-col img {
+        width: 50%;
+        box-sizing: border-box;
+    }
 
-        .two-col img {
-            height: 400px;
-            object-fit: cover;
-        }
+    .two-col img {
+        height: 400px;
+        object-fit: cover;
+    }
 
-        #main-nav {
-            float: right;
-        }
+    #main-nav {
+        float: right;
+    }
 
     #logo {
         font-size: 4rem;
+        text-align: left;
         width: 50%;
         }
 
@@ -693,7 +710,7 @@ label {
         display: flex;
         box-sizing: border-box;
         margin: auto;
-        gap: 1em;
+        gap: 3em;
     }
 
         .breeds p {
@@ -705,18 +722,20 @@ label {
         margin: auto;
     }
 
-    #blog-gallery, #gallery {
-            column-count: 2;
-    }
-
     .img-text {
         width: 100%;
         display: flex;
         box-sizing: border-box;
         align-items:center;
-        gap: 1em;
+        gap: 3em;
         padding-bottom: 1em;
     }
+
+    #blog-gallery, #gallery {
+        column-count: 2;
+        padding: 3em;
+        gap: 3em;
+}
 
     form, #sign-up-form img {
         width: 50%;
@@ -729,7 +748,7 @@ label {
         display: flex;
         max-width: 1280px;
         margin: auto;
-        padding: 2em;
+        padding: 3em;
     }
     
     .dog-profiles {
@@ -737,4 +756,7 @@ label {
         margin: auto;
     }
 
+    #blog-gallery, #gallery {
+            column-count: 3;
+    }
 }
