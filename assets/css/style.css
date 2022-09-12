@@ -73,8 +73,10 @@ ol {
     vertical-align: middle;
     padding: 1em;
     cursor: pointer;
-    width: 100%;
+    min-width: 120px;
     box-sizing: border-box;
+    width: 100%;
+    margin: auto;
 }
 
 button a {
@@ -288,11 +290,6 @@ section {
 
     section h2 {
         margin-bottom: 0.5em;
-        height: auto;
-    }
-
-    section h3 {
-        height: auto;
     }
 
 .two-col {
@@ -307,7 +304,7 @@ section {
 
 
 
-/*learn about breeds section*/
+/* learn about breeds */
 
 #about-breeds {
     background: 
