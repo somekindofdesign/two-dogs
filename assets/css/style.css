@@ -171,7 +171,6 @@ header {
         display: inline-block;
     }
 
-
     #main-nav a {
         text-decoration: none;
         color: #001F3F;
@@ -181,10 +180,10 @@ header {
         border-bottom: 2px solid #FF851B;
     }
 
-.active {
-    font-weight: 700;
-    border-bottom: 2px solid #001F3F;
-}
+    .active {
+        font-weight: 700;
+        border-bottom: 2px solid #001F3F;
+    }
 
 #logo {
     color: #FF851B;
@@ -242,7 +241,7 @@ header {
 #hero-image {
     height: 560px;
     width: 100%;
-    background: linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url('../images/wreckless_eric_baby_jim.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url('../images/two_dogs_snuggled_chair.jpg') no-repeat center center;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
