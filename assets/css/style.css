@@ -153,33 +153,33 @@ img {
 header {
     width: 100%;
     padding: 1em;
-    box-sizing: border-box;
-}
-
-header > * {
-    width: 100%;
-    box-sizing: border-box;
+    display: inline-block;
     margin: auto;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-#main-nav li {
-    float: left;
-    list-style-type: none;
-    margin-right: 1.5em;
-    line-height: 3em;
-    vertical-align: middle;
+#main-nav ul {
+    box-sizing: content-box;
 }
 
+    #main-nav li {
+        float: left;
+        list-style-type: none;
+        margin: 1em;
+        line-height: 3em;
+        vertical-align: middle;
+        display: inline-block;
+    }
 
-#main-nav a {
-    text-decoration: none;
-    color: #001F3F;
-}
 
-#main-nav a:hover {
-    border-bottom: 2px solid #FF851B;
-}
+    #main-nav a {
+        text-decoration: none;
+        color: #001F3F;
+    }
+
+    #main-nav a:hover {
+        border-bottom: 2px solid #FF851B;
+    }
 
 .active {
     font-weight: 700;
@@ -658,13 +658,13 @@ label {
             object-fit: cover;
         }
 
-        #main-nav li {
+        #main-nav {
             float: right;
         }
 
     #logo {
         font-size: 4rem;
-        width: auto;
+        width: 50%;
         }
 
         #logo i {
@@ -672,7 +672,7 @@ label {
         }
 
     nav {
-        width: auto;
+        width: 50%;
     }
 
     .breeds {
