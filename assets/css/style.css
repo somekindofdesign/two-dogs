@@ -286,10 +286,17 @@ header {
 section {
     padding: 1em;
     box-sizing: border-box;
+    object-fit: fill;
 }
 
     section h2 {
         margin-bottom: 0.5em;
+    }
+
+    section img {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
     }
 
 .two-col {
@@ -300,6 +307,12 @@ section {
     .two-col div, .two-col img {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .two-col img {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
     }
 
 
@@ -655,6 +668,7 @@ label {
         }
 
         .two-col img {
+            height: 400px;
             object-fit: cover;
         }
 
