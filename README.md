@@ -1,108 +1,101 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Welcome to Two Dogs!</h1>
+Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-t0-day life.
+Responsive Mockup
 
-Welcome Louise Stanley,
+<h2>Features</h2>
+The first release of the Two Dogs site includes several vital features which are detailed below. Future releases should include additional features as outlined in the 'Features Left to Implement' section below.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<h3>Existing Features</h3>
+<strong>Navigation Bar</strong>
+**Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
+This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+Nav Bar screenshot
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Sign up form
+intro
+screenshot
 
-## Gitpod Reminders
+<strong>The landing page image</strong>
+**The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
+This section introduces the user to Love Running with an eye catching animation to grab their attention
+Landing Page image
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<strong>Meet the Two Dogs</strong>
+**This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. This section will be updated as these times change to keep the user up to date.
+Meet screenshot
 
-`python3 -m http.server`
+<strong>Tails Blog</strong>
+Intro
+Tails screenshot
 
-A blue button should appear to click: _Make Public_,
+<strong>The Footer</strong>
+**The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user.
+The footer is valuable to the user as it encourages them to keep connected via social media
+Footer screenshot
 
-Another blue button should appear to click: _Open Browser_.
+<strong>Gallery</strong>
+**The gallery will provide the user with supporting images to see what the meet ups look like.
+This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together.
+Gallery
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<strong>The Sign Up Page</strong>
+**This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address.
+Sign Up screenshot
 
-A blue button should appear to click: _Make Public_,
+**For some/all of your features, you may choose to reference the specific project files that implement them.
 
-Another blue button should appear to click: _Open Browser_.
+**In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<h3>Features Left to Implement</h3>
+<ul>
+    <li>CMS for adding and organising blog posts and image/video content</li>
+    <li>Automated emails to subscribed users with optional daily, weekly or monthly updates</li>
+    <li>Comments and social sharing on blogs</li>
+</ul>
 
-To log into the Heroku toolbelt CLI:
+<h2>Testing</h2>
+**In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+**In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+**You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+**If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<h3>Validator Testing</h3>
+<strong>HTML</strong>
+In the first round of validator testing, button tags and section/article tags were found to be used incorrectly. In addition, there were a small number of open tags and unnecessary tags that needed to be addressed. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<strong>CSS</strong>
+**No errors were found when passing through the official (Jigsaw) validator
 
-------
+<h2>Unfixed Bugs</h2>
+**You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
-## Release History
+<h2>Deployment</h2>
+**This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+**The site was deployed to GitHub pages. The steps to deploy are as follows:
+**In the GitHub repository, navigate to the Settings tab
+**From the source section drop-down menu, select the Master Branch
+**Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+**The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<h2>**Credits</h2>
+The code from this project was implemented by the project owner, Louise Stanley. Additional help, guidance and solutions were also used from the below sources.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<strong>Code Institute</strong>
+ <a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/">Love Running Walkthrough Project - Creating the Hero Image</a>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<strong>W3Schools</strong>
+<a href="https://www.sliderrevolution.com/resources/styling-radio-buttons/"></a>How TO - Custom Checkbox</a>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<h3>Content</h3>
+Although the content is unique, the project including layout, features and readme were guided by the Code Instite Project 1 project guidelines.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+All written content was provided by project owner, Louise Stanley
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<h3>Media</h3>
+Images and videos were generated by Louise Stanley with the exception of the background image for the About Breeds section. Please see content creator information below.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+<ul>
+    <li>
+        Photo by <a href="https://unsplash.com/@hannah15198?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Lim</a> on <a href="https://unsplash.com/s/photos/breeds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </li>
+</ul>
