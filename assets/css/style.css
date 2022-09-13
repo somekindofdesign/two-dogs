@@ -411,6 +411,11 @@ section {
         object-fit: cover;
     }
 
+.img-text > img {
+    width: 50%;
+    height: 240px;
+}
+
 
 /*gallery page*/
 
@@ -597,6 +602,7 @@ label {
     box-sizing: border-box;
 }
 
+
 /*sign up banner*/
 
 #sign-up-banner {
@@ -692,6 +698,7 @@ label {
         gap: 3em;
         padding-bottom: 1em;
     }
+
 
     #blog-gallery, #gallery {
         column-count: 2;
