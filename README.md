@@ -1,5 +1,5 @@
 <h1>Welcome to Two Dogs!</h1>
-<p>Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-t0-day life.
+<p>Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-to-day life.
 Responsive Mockup</p>
 <br>
 
@@ -79,6 +79,24 @@ screenshot
 
 <p>
 During initial testing, more efficient ways to approach the html structure and css of this site were dicovered and an attempt was made to improve it. This resulted in large changes than expected, such as the move to using styled sections over individually targeted elements, and required additional fixes and testing before release.</p>
+<br>
+
+Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tools. The results were as follows.
+
+<strong>Lighthouse</strong>
+<ul>
+    <li>Performance - </li>
+    <li>Accessibility - </li>
+    <li>Best Practices - </li>
+    <li>SEO - </li>
+</ul>
+<br>
+
+<strong>Page Speed</strong>
+<ul>
+    <li>Mobile - </li>
+    <li>Desktop - </li>
+</ul>
 <br>
 
 <h3>Validator Testing</h3>
