@@ -148,7 +148,12 @@ During initial testing, opportunity to refactor the code were dicovered and an a
     <ul>
     <li><a href="https://www.sliderrevolution.com/resources/styling-radio-buttons/">Styling Radio Buttons with CSS</a> for styling the radio buttons on the sign up form</li>
     </ul>
-<br>
+
+<strong>Medium</strong>
+    <ul>
+    <li><a href="https://heyoka.medium.com/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793">Responsive, Pure CSS Off-Canvas Hamburger Menu</a> for implementing a hamburger menu on smaller devices</li>
+    </ul>
+    <br>
 
 <h3>Content</h3>
 <p>Although the content is unique, the project including layout, features and readme file were guided by the Code Institute <a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/">Portfolio 1 Assessment Guide</a>.</p>
