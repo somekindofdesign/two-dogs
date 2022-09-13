@@ -50,7 +50,7 @@ p {
 
 .caption {
     font-size: 0.8rem;
-    color: #FF851B;
+    color: #85144B;
     text-transform: uppercase;
     padding-bottom: 0;
 }
@@ -284,7 +284,6 @@ section {
     }
 
     .two-col img {
-        height: 100%;
         object-fit: cover;
         overflow: hidden;
     }
