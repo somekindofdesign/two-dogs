@@ -1,6 +1,6 @@
 <h1>Welcome to Two Dogs!</h1>
-<p>Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-to-day life.
-Responsive Mockup</p>
+<p>Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-to-day life.</p>
+Responsive Mockup
 <br>
 
 <h2>Features</h2>
@@ -8,65 +8,56 @@ Responsive Mockup</p>
 <br>
 
 <h3>Existing Features</h3>
-<strong>Navigation Bar</strong>
+<strong>The navigation bar</strong>
 <p>Featured on all pages, this fully responsive navigation includes links to the landing page, the meet page, the tails blog page, the gallery and the blog sign up page. It is exactly replicated across the site to ensure consistency for the user.</p>
 
 <p>The navigation allows users to browse the site from any page without having to use the back button on their device.</p>
 Nav Bar screenshot
 <br>
 
-<strong>The landing page image</strong>
+<strong>The landing page hero image</strong>
 <p>The landing page opens up to an image of the two dogs, enticing the user to explore the site further and find out more about them. The image has a slight zoom to help focus the user on the call-to-action, beginning their journey on the site.</p>
-
-<p>Also on this page, users can find a teaser for the blog in the form of the latest blog post and some additional information on the breeds of the dogs.</p>
 Landing Page image
 <br>
 
-<strong>The Footer</strong>
-<p>**The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user.
-The footer is valuable to the user as it encourages them to keep connected via social media</p>
+<strong>The footer</strong>
+<p>The footer includes links to relevant social media sites, opened in new tabs to avoid taking the user away from this site.</p>
 Footer screenshot
 <br>
 
-<strong>Meet page</strong>
-<p>**This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. This section will be updated as these times change to keep the user up to date.</p>
+<strong>The meet page</strong>
+<p>The meet page introduces users to the Two Dogs and allows them to learn some basic facts about their history and personality including likes and dislikkes. This is important in building rapport with the audience.</p>
 Meet screenshot
 <br>
 
-<strong>Tails Blog</strong>
-<p>Intro</p>
+<strong>The tails blog</strong>
+<p>The Tails Blog houses blog posts giving detailed stories about the Two Dogs lives. Users will find written content, images and videos updated frequently here. This is the main focus of the website and will grow over time as new content is added.</p>
 Tails screenshot
 <br>
 
-<strong>Gallery</strong>
-<p>**The gallery will provide the user with supporting images to see what the meet ups look like.
-This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together.</p>
-Gallery
+<strong>The gallery</strong>
+<p>The gallery contains visual content of the dogs including those from the Tails blog posts and completely new content. It supports the core feature of the site, the blog.</p>
+Gallery screenshot
 <br>
 
-<strong>The Sign Up Page</strong>
-<p>**This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address.</p>
+<strong>The sign up page</strong>
+<p>The sign up page includes a sign up form that allows users to opt in to periodical emails containing the latest stories from the Two Dogs lives. Users are in control of the frequency of the emails received.</p>
 Sign Up screenshot
-<br>
-
-<strong>Sign up form</strong>
-<p>The sign up form, housed on the sign up page, allows users to quickly identify their interest in receving a periodical blog to their email inbox with information about the two dogs.</p>
-screenshot
 <br>
 
 <h3>Features Left to Implement</h3>
 <ul>
     <li>CMS for adding and organising blog posts and image/video content</li>
     <li>Automated emails to subscribed users with optional daily, weekly or monthly updates</li>
-    <li>Comments and social sharing on blogs</li>
-    <li>Option to utilise dynamic image sizes at different screen sizes</li>
+    <li>Comments and social sharing on blog posts</li>
+    <li>Option to implement dynamic image sizes at different screen sizes</li>
 </ul>
 <br>
 
 <h2>Testing</h2>
 <p>Throughout the development of this site, testing was carried out on different devices using the developer tools on multiple browsers including Chrome, Firefox and Microsoft Edge. This was repeated at the final testing phase of the project but also included additional browsers including Safari and Opera at this stage.</p>
 
-<p>It is worth noting that as Apple has suspended support for Safari on Windows devices, testing for this browser was conducted using the free <a href="https://www.lambdatest.com/">LambdaTest tool</a> which may limit the accuracy of the tests.</p>
+<p>It is worth noting that as Apple has suspended support for Safari on Windows devices, testing for this browser was conducted using an unsupported version (v5.1.7) which may limit the accuracy of the tests.</p>
 
 <p>For all testing, each page was reviewed across the following criteria;
 <ul>
@@ -77,11 +68,7 @@ screenshot
 </ul>
 </p>
 
-<p>
-During initial testing, more efficient ways to approach the html structure and css of this site were dicovered and an attempt was made to improve it. This resulted in large changes than expected, such as the move to using styled sections over individually targeted elements, and required additional fixes and testing before release.</p>
-<br>
-
-Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tools. The results were as follows.
+<p>Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tools. The results were as follows.</p>
 
 <strong>Lighthouse</strong>
 <ul>
@@ -99,30 +86,34 @@ Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tool
 </ul>
 <br>
 
+<p>
+During initial testing, opportunity to refactor the code were dicovered and an attempt was made to improve it. This resulted in larger changes than expected, such as the move to using styled sections over individually targeted elements, which required additional fixes and further testing before release.</p>
+<br>
+
 <h3>Validator Testing</h3>
 <strong>HTML</strong>
-<p>In the first round of html validator testing, button tags and section/article tags were found to be used incorrectly. In addition, there were a small number of open tags and unnecessary tags that needed to be addressed.</p>
+<p>In the first round of html validator testing, button tags and section/article tags were found to be used incorrectly. In addition, there were a small number of open and unnecessary tags that needed to be addressed.</p>
 
-<p>The second round, conducted after implementing the new structure,...</p>
+<p>**The second round, conducted after implementing the new structure,...</p>
 
 <p>The third and final round returned no errors for this project.</p>
 <br>
 
 <strong>CSS</strong>
-<p>In the first round of css validator testing, some unclosed attributes were found. This highlighted that these attributes that were unecessary to the output of the code and were removed.</p>
+<p>In the first round of css validator testing, some unclosed attributes were found. This highlighted that these attributes were unecessary to the output of the code and were removed.</p>
 
-<p>The second round, conducted after implementing more efficient css,...</p>
+<p>**The second round, conducted after implementing more efficient css,...</p>
 
 <p>The third and final round returned no errors for this project.</p>
 <br>
 
 <h2>Unfixed Bugs</h2>
 <strong>Images</strong>
-<p>Unfortunately image rendering falls short of expectation as on different screen sizes images present differenty. Although efoorts were taken to reduce the impact with additional css and properly prepared files, not all images on the Two Dogs site are currently optimised for every screen. In particular, the hero image on the landing page has provided a challenge and should be addressed in future iterations of this site.</p>
+<p>Unfortunately image rendering falls short of expectation as on different screen sizes some images present differenty. Although efoorts were taken to reduce the impact with additional css and properly prepared files, not all images on the Two Dogs site are currently optimised for every screen. In particular, the hero image on the landing page has proved challenging and should be addressed in future iterations of this site.</p>
 <br>
 
 <strong>404 Error</strong>
-<p>Due to the limitations of GitHub, a custom 404 page has not been implemented. However, one has been developed along side the project for release and is ready to be implemented when applicable.</p>
+<p>Due to the limitations of GitHub, a custom 404 page has not been implemented. However, the page has been developed along side the project oin this release and should be implemented when applicable.</p>
 <br>
 
 <h2>Deployment</h2>
