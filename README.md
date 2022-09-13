@@ -169,3 +169,9 @@ During initial testing, opportunity to refactor the code were dicovered and an a
     </li>
 </ul>
 </p>
+<br>
+
+<h2>User Stories</h2>
+<p>As a dog lover and online content consumer I want to view content relating to dogs online</p>
+<p>As a dog lover and online content consumer I want to view content relating to the two dogs, Wreckless Eric and Baby Jim</p>
+<p>As a fan of the Two Dogs blog, I want to keep up to date with the latest blog posts</p>
