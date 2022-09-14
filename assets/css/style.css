@@ -117,7 +117,7 @@ button:hover {
 /*hr & tables*/
 
 hr {
-    border: 1px solid #DEDCDF;
+    border-top: 1px solid #DEDCDF;
     width: 100%;
     margin-top: 1em;
 }
@@ -399,18 +399,18 @@ section {
     }
 
 #blog-post {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
 }
 
-    #blog-post img {
-        height: 320px;
+    .blog-post-img {
+        height: 400px;
         object-fit: cover;
     }
 
-.img-text > img {
+.img-text:nth-child() {
     width: 50%;
-    height: 240px;
+    height: 160px;
 }
 
 
@@ -426,7 +426,7 @@ section {
 
 #gallery > img {
     width: 100%;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 
@@ -697,11 +697,17 @@ label {
     }
 
 
-    #blog-gallery, #gallery {
+    #blog-gallery, {
         column-count: 2;
         padding: 3em;
         gap: 3em;
 }
+
+    #gallery {
+        column-count: 2;
+        padding: 3em;
+        gap: 1em;
+    }
 
     form, #sign-up-form img {
         width: 50%;
