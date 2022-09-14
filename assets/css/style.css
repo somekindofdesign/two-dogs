@@ -162,6 +162,7 @@ header {
 #logo {
     color: #FF851B;
     font-size: 2.5rem;
+    line-height: 1em;
     font-weight: 700;
     text-align: center;
     font-family: Arvo, Cambria, Cochin, serif;
@@ -171,10 +172,6 @@ header {
     #logo i {
         font-size: 1.5rem;
     }
-
-nav {
-    float: right;
-}
 
 /* page titles */
 
@@ -746,10 +743,11 @@ label {
   /* Button styling */
   .menu-toggle {
     display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
+    padding: .5em;
+    line-height: 1rem;
+    font-size: 2rem;
     color: #85144B;
+    margin-left: auto;
   }
   
   .menu-toggle:hover,
@@ -775,30 +773,27 @@ label {
   
   .main-menu ul {
     list-style: none;
+    float: right;
     margin: 0;
-    padding: 2.5em 0 0;
+    padding: 3em 0 0;
     /* Hide shadow w/ -8px while 'closed' */
     -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
        -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
             box-shadow: -8px 0 8px rgba(0,0,0,.5);
     min-height: 100%;
-    width: 200px;
     background: #ffffff;
   }
   
   .main-menu a {
     display: block;
-    padding: .75em 15px;
+    padding: 1em;
     line-height: 1em;
     font-size: 1em;
     color: #001F3F;
     text-decoration: none;
-    border-bottom: 1px solid #585160;
+    border-bottom: .5px solid #585160;
   }
-  
-  .main-menu li:first-child a {
-    border-top: 1px solid #585160;
-  }
+
   
   .main-menu a:hover,
   .main-menu a:focus {
@@ -808,6 +803,11 @@ label {
   
   .main-menu .menu-close {
     position: absolute;
+    text-align: right;
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    height: 3em;
     right: 0;
     top: 0;
   }
@@ -863,6 +863,7 @@ label {
     .main-menu:target + .backdrop,
     .main-menu[aria-expanded="true"] + .backdrop{
       position: fixed;
+      margin-left: auto;
     }
   }
   
