@@ -728,6 +728,7 @@ label {
 
     #blog-gallery, #gallery {
             column-count: 3;
+            padding: 3em;
     }
 }
 
