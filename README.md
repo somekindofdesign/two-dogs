@@ -94,7 +94,7 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 <strong>HTML</strong>
 <p>In the first round of html validator testing, button tags and section/article tags were found to be used incorrectly. In addition, there were a small number of open and unnecessary tags that needed to be addressed.</p>
 
-<p>**The second round, conducted after implementing the new structure,...</p>
+<p>**The second round, conducted after implementing the new structure, found a open div on the index page, sections incorrectly used in place of divs and some stray tags. In two instances, changing the section to div required updating the css file to maintain syles.</p>
 
 <p>The third and final round returned no errors for this project.</p>
 <br>
@@ -102,7 +102,7 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 <strong>CSS</strong>
 <p>In the first round of css validator testing, some unclosed attributes were found. This highlighted that these attributes were unecessary to the output of the code and were removed.</p>
 
-<p>**The second round, conducted after implementing more efficient css,...</p>
+<p>**The second round, conducted after implementing more efficient css, found two parse errors. In addition, it warned of the use of the deprecated property 'clip'.</p>
 
 <p>The third and final round returned no errors for this project.</p>
 <br>
