@@ -108,10 +108,6 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 <br>
 
 <h2>Unfixed Bugs</h2>
-<strong>Images</strong>
-<p>Unfortunately image rendering falls short of expectation as on different screen sizes some images present differenty. Although efoorts were taken to reduce the impact with additional css and properly prepared files, not all images on the Two Dogs site are currently optimised for every screen. In particular, the hero image on the landing page has proved challenging and should be addressed in future iterations of this site.</p>
-<br>
-
 <strong>404 Error</strong>
 <p>Due to the limitations of GitHub, a custom 404 page has not been implemented. However, the page has been developed along side the project oin this release and should be implemented when applicable.</p>
 <br>

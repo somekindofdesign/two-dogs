@@ -214,7 +214,7 @@ header {
 #hero-image {
     height: 560px;
     object-fit: cover;
-    background: linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url('../images/two_dogs_snuggled_chair.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url('../images/hero_image.jpg') no-repeat center center;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -657,7 +657,7 @@ label {
         box-sizing: border-box;
     }
 
-    .two-col img {
+    .two-col > img {
         height: 400px;
         object-fit: cover;
     }
@@ -732,8 +732,6 @@ label {
     }
 }
 
-
-/* Screen reader only */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -745,7 +743,6 @@ label {
     border: 0;
   }
   
-  /* Button styling */
   .menu-toggle {
     display: inline-block;
     padding: .5em;
@@ -760,10 +757,6 @@ label {
     color: #85144B;
   }
   
-  /*
-   Default styles + Mobile first
-   Offscreen menu style
-  */
   .main-menu {
     position: absolute;
     display: none;
@@ -798,7 +791,6 @@ label {
     text-decoration: none;
     border-bottom: .5px solid #585160;
   }
-
   
   .main-menu a:hover,
   .main-menu a:focus {
@@ -817,13 +809,6 @@ label {
     top: 0;
   }
   
-  /*
-   On small devices, allow it to toggle...
-  */
-  /*
-   :target for non-JavaScript
-   [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-  */
   .main-menu:target,
   .main-menu[aria-expanded="true"] {
     display: block;
@@ -844,11 +829,7 @@ label {
     position: relative;
     z-index: 1000;
   }
-  
-  /* 
-   We could us `.main-menu:target:after`, but
-   it wouldn't be clickable.
-  */
+
   .main-menu:target + .backdrop,
   .main-menu[aria-expanded="true"] + .backdrop{
     position: absolute;
@@ -871,18 +852,13 @@ label {
       margin-left: auto;
     }
   }
-  
-  /*
-   Larger screen styling
-   Horizontal menu
-  */
+
   @media (min-width: 841px) {
     .menu-toggle,
     .main-menu .menu-close {
       display: none;
     }
-    
-    /* Undo positioning of off-canvas menu */
+
     .main-menu {
       position: relative;
           left: auto;
@@ -892,8 +868,6 @@ label {
     
     .main-menu ul {
       display: flex;
-      
-      /* Undo off-canvas styling */
       padding: 0;
       -webkit-box-shadow: none;
          -moz-box-shadow: none;
@@ -905,12 +879,12 @@ label {
     
     .main-menu a {
       color: #001F3F;
-      border: 0 !important; /* Remove borders from off-canvas styling */
+      border: 0 !important;
     }
     
     .main-menu a:hover,
     .main-menu a:focus {
-      background: none; /* Remove background from off-canvas styling */
+      background: none;
       text-decoration: underline;
         text-decoration-color: #FF851B;
         text-underline-offset: .25em;
