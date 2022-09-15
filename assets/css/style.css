@@ -887,7 +887,6 @@ label {
       position: relative;
           left: auto;
           top: auto;
-          height: auto;
       display: block;
     }
     
@@ -912,6 +911,9 @@ label {
     .main-menu a:hover,
     .main-menu a:focus {
       background: none; /* Remove background from off-canvas styling */
-      color: #FF851B;
+      text-decoration: underline;
+        text-decoration-color: #FF851B;
+        text-underline-offset: .25em;
     }
+    
   }
