@@ -55,9 +55,9 @@ Sign Up screenshot
 <br>
 
 <h2>Testing</h2>
-<p>Throughout the development of this site, testing was carried out on different devices using the developer tools on multiple browsers including Chrome, Firefox and Microsoft Edge. This was repeated at the final testing phase of the project but also included additional browsers including Safari and Opera at this stage.</p>
+<p>Throughout the development of this site, testing was carried out on different devices using the developer tools on multiple browsers including Chrome, Firefox and Microsoft Edge on Windows 10.</p>
 
-<p>It is worth noting that as Apple has suspended support for Safari on Windows devices, testing for this browser was conducted using an unsupported version (v5.1.7) which may limit the accuracy of the tests.</p>
+<p>This was repeated at the final testing phase of the project using the free testing variations on <a href="https://live.browserstack.com/dashboard">BrowserStack.com</a>, while extending the reach of testing to other Windows OS, the broswer Safari and multiple MacOS. It is worth noting that as this is a free tool, the accuracy of the tests may be limited.</p>
 
 <p>For all testing, each page was reviewed across the following criteria;
 <ul>
@@ -86,11 +86,11 @@ Sign Up screenshot
 </ul>
 <br>
 
+<h3>Validator Testing</h3>
 <p>
 During initial testing, opportunity to refactor the code were dicovered and an attempt was made to improve it. This resulted in larger changes than expected, such as the move to using styled sections over individually targeted elements, which required additional fixes and further testing before release.</p>
 <br>
 
-<h3>Validator Testing</h3>
 <strong>HTML</strong>
 <p>In the first round of html validator testing, button tags and section/article tags were found to be used incorrectly. In addition, there were a small number of open and unnecessary tags that needed to be addressed.</p>
 
