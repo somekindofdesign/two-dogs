@@ -400,6 +400,7 @@ section {
 #blog-post {
     max-width: 800px;
     margin: auto;
+    padding: 1em;
 }
 
     .blog-post-img {
@@ -409,7 +410,7 @@ section {
 
     .img-text > img {
         width: 100%;
-        margin-right: 1em;
+        margin-bottom: 1em;
     }
 
 
@@ -596,12 +597,15 @@ label {
 /* back to top */
 
 .return-options {
-    padding: 1em;
     width: 100%;
     display: block;
     margin: auto;
     box-sizing: border-box;
 }
+
+    .return-options a {
+        padding: 1em .5em;
+    }
 
 
 /*sign up banner*/
@@ -698,13 +702,22 @@ label {
         padding-bottom: 1em;
     }
 
+    .img-text > img {
+        width: 50%;
+        margin-right: 1em;
+    }
+
     #blog-gallery {
         column-count: 2;
         max-width: 1280px;
         box-sizing: border-box;
         padding: 3em;
         gap: 3em;
-}
+    }
+
+    #blog-post {
+        padding: 3em;
+    }
 
     #gallery {
         column-count: 2;
