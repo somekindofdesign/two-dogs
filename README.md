@@ -112,6 +112,13 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 <p>Due to the limitations of GitHub, a custom 404 page has not been implemented. However, the page has been developed along side the project oin this release and should be implemented when applicable.</p>
 <br>
 
+<strong>Browser Discrepencies</strong>
+<p>On both Firefox and Safari, the redirect to the custom success page after submitting the sign up form is broken. The user is brough to the Code Institute 'form dump' confirmation page.</p>
+<br>
+
+<p>Also Firefox and Safari, the custom styling on the sign up form is not displaying as expected and is overwritten by browser defaults. Although this does not interfere with the user experience, it does effect the brand and site consistency.</p>
+<br>
+
 <h2>Deployment</h2>
 <p>**This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 **The site was deployed to GitHub pages. The steps to deploy are as follows:
