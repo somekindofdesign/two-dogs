@@ -408,13 +408,9 @@ section {
         object-fit: cover;
     }
 
-.img-text {
-    gap: 1em;
-    width: 100%;
-}
-
     .img-text > img {
         width: 100%;
+        margin-right: 1em;
     }
 
 
@@ -692,11 +688,9 @@ label {
     }
 
     .img-text {
-        width: 100%;
         display: flex;
         box-sizing: border-box;
-        align-items:center;
-        gap: 1em;
+        align-items: center;
         padding-bottom: 1em;
     }
 
