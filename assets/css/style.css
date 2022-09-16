@@ -193,14 +193,6 @@ header {
         color: #585160;
     }
 
-    #page-title h3 > a , #page-title h2 > a {
-        text-decoration: underline;
-    }
-
-    #page-title img {
-        margin-top: 1em;
-    }
-
 /* hero image and text */
 
 /* hero */
@@ -655,6 +647,10 @@ label {
     #page-title, #about-breeds {
         padding: 3em;
     }
+
+        #page-title p {
+            padding: 1.5rem 0 1.5rem 0;
+        }
 
     .btn {
         width: auto;
