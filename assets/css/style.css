@@ -153,7 +153,7 @@ img {
 header {
     width: 100%;
     max-width: 1280px;
-    padding: 1em;
+    padding: 2em 1em 1em 1em;
     display: inline-block;
     margin: auto;
     box-sizing: border-box;
@@ -161,8 +161,7 @@ header {
 
 #logo {
     color: #FF851B;
-    font-size: 2.5rem;
-    line-height: 1em;
+    font-size: 3.75rem;
     font-weight: 700;
     text-align: center;
     font-family: Arvo, Cambria, Cochin, serif;
@@ -170,7 +169,7 @@ header {
 }
 
     #logo i {
-        font-size: 1.5rem;
+        font-size: 2.75rem;
     }
 
 /* page titles */
@@ -647,6 +646,15 @@ label {
       gap: 3em;
     }
 
+    #logo {
+        font-size: 5rem;
+        text-align: left;
+        }
+    
+        #logo i {
+            font-size: 4rem;
+        }
+
     #page-title, #about-breeds {
         padding: 3em;
     }
@@ -668,15 +676,6 @@ label {
         height: 400px;
         object-fit: cover;
     }
-
-    #logo {
-        font-size: 4rem;
-        text-align: left;
-        }
-
-        #logo i {
-            font-size: 2.5rem;
-        }
 
     .breeds {
         display: flex;
@@ -871,7 +870,7 @@ label {
     }
   }
 
-  @media (min-width: 841px) {
+  @media (min-width: 903px) {
     .menu-toggle,
     .main-menu .menu-close {
       display: none;
