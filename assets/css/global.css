@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #585160;
+	margin: 0 auto !important; 
+	float: none !important; 
+}
+
+/* type */
+
+h1 {
+    font-size: 3.05rem;
+}
+
+h2 {
+    font-size: 2.44375rem;
+}
+
+h3 {
+    font-size: 1.95625rem;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: Arvo, Cambria, Cochin, serif;
+    letter-spacing: 4px;
+    color: #001F3F;
+    line-height: 1.4em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: #85144B;
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+
+ol {
+    padding-left: 3em;
+}
+
+
+/*buttons*/
+
+.btn, button {
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em;
+    cursor: pointer;
+    min-width: 120px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover {
+    opacity: .75;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-maroon {
+    color: #ffffff;
+    background-color: #85144B;
+}
+
+.btn-maroon-outline {
+    color: #85144B;
+    background-color: #ffffff;
+    border: 2px solid #85144B;
+}
+
+.btn-orange {
+    color: #001F3F;
+    background-color: #FF851B;
+}
+
+.hyper-link {
+    color: #85144B;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* page titles */
+
+#page-title {
+    padding: 1em;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+    #page-title h2 {
+        color: #585160;
+        padding-bottom: 1rem;
+    }
+
+    #page-title h3 {
+        padding-bottom: 1rem;
+        color: #585160;
+    }
+
+
+/* images */
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* footer */
+/* footer courtesy of Code Institute via Love Running */
+
+.socials {
+    text-align: center;
+}
+
+.socials li {
+    display: inline;
+    margin: 1em;
+}
+
+.socials i {
+    font-size: 1.5em;
+    color: #001F3F;
+    padding: 1rem;
+}
+
+.socials i:hover {
+    opacity: .75;
+}
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+    .btn {
+        width: auto;
+    }
+
+}

@@ -1,6 +1,18 @@
 <h1>Welcome to Two Dogs!</h1>
 <p>Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-to-day life.</p>
-Responsive Mockup
+<br>
+<p><img width="640px" height=auto src="assets/images/readme/two-dogs.jpg" alt="two dogs blog on desktop, laptop and mobile devices">
+Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_12220977.htm#query=device%20mockup&position=1&from_view=keyword">Freepik</a></p>
+<br>
+
+<h2>Audiences</h2>
+<p>The target audience for this site is consumers of online entertainment with a cross section of dog-lovers. It's primary source of traffic will be through social media channels. If the site is successful, it is expected that a portion of users will come from signing up to the blog.</p>
+<ul>
+<strong>User Stories</strong>
+<li>As a dog lover and online content consumer I want to view content relating to dogs online</li>
+<li>As a dog lover and online content consumer I want to view content relating to the two dogs, Wreckless Eric and Baby Jim</li>
+<li>As a fan of the Two Dogs blog, I want to keep up to date with the latest blog posts</li>
+</ul>
 <br>
 
 <h2>Features</h2>
@@ -51,6 +63,7 @@ Sign Up screenshot
     <li>Automated emails to subscribed users with optional daily, weekly or monthly updates</li>
     <li>Comments and social sharing on blog posts</li>
     <li>Option to implement dynamic image sizes at different screen sizes</li>
+    <li>Implement custom 404 page (page has been built in this release, implementation blocked by git restrictions)</li>
 </ul>
 <br>
 
@@ -72,10 +85,10 @@ Sign Up screenshot
 
 <strong>Lighthouse</strong>
 <ul>
-    <li>Performance - </li>
-    <li>Accessibility - </li>
-    <li>Best Practices - </li>
-    <li>SEO - </li>
+    <li>Performance - 75</li>
+    <li>Accessibility - 100</li>
+    <li>Best Practices - 100</li>
+    <li>SEO - 100</li>
 </ul>
 <br>
 
@@ -108,10 +121,6 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 <br>
 
 <h2>Unfixed Bugs</h2>
-<strong>404 Error</strong>
-<p>Due to the limitations of GitHub, a custom 404 page has not been implemented. However, the page has been developed along side the project oin this release and should be implemented when applicable.</p>
-<br>
-
 <strong>Browser Discrepencies</strong>
 <p>On both Firefox and Safari, the redirect to the custom success page after submitting the sign up form is broken. The user is brough to the Code Institute 'form dump' confirmation page.</p>
 <br>
@@ -136,9 +145,8 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 <strong>Code Institute - Love Running Walkthrough Project</strong>
     <ul>
     <li><a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/">Creating the Hero Image</a> for the hero image and text on the landing page</li>
-    <li><a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/">Creating the Header</a> for the main nav initial structure</li>
     <li><a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/12ba169db7b34b82b137edd825af6a02/">Creating the Club Ethos</a> for the circle containers of the dog profiles on the Meet page</li>
-    <li><a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/">Site Footer</a> for the social media links on the footer</li>
+    <li><a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/">Site Footer</a> for the social media links and the footer</li>
     </ul>
 
 <strong>W3Schools</strong>
@@ -173,8 +181,3 @@ During initial testing, opportunity to refactor the code were dicovered and an a
 </ul>
 </p>
 <br>
-
-<h2>User Stories</h2>
-<p>As a dog lover and online content consumer I want to view content relating to dogs online</p>
-<p>As a dog lover and online content consumer I want to view content relating to the two dogs, Wreckless Eric and Baby Jim</p>
-<p>As a fan of the Two Dogs blog, I want to keep up to date with the latest blog posts</p>
