@@ -216,6 +216,10 @@ img {
         width: auto;
     }
 
+#page-title {
+  padding: 3em;
+}
+
 }
 
 /* main nav with hamburger menu and drawer nav courtesy of Mark Caron via Medium.com */

@@ -11,20 +11,24 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 <strong>User Stories</strong>
 <li>As a dog lover and online content consumer I want to view content relating to dogs online</li>
 <li>As a dog lover and online content consumer I want to view content relating to the two dogs, Wreckless Eric and Baby Jim</li>
-<li>As a fan of the Two Dogs blog, I want to keep up to date with the latest blog posts</li>
+<li>As a fan of the Two Dogs blog, I want to keep up to date with the latest blog posts through email</li>
 </ul>
 <br>
 
 <h2>Features</h2>
-<p>The first release of the Two Dogs site includes several vital features which are detailed below. Future releases should include additional features as outlined in the 'Features Left to Implement' section below.</p>
+<p>The first release of the Two Dogs site includes several vital features which are detailed below. Future releases should include additional features as outlined in the 'Features Left to Implement' section.</p>
 <br>
+
 
 <h3>Existing Features</h3>
 <strong>The navigation bar</strong>
 <p>Featured on all pages, this fully responsive navigation includes links to the landing page, the meet page, the tails blog page, the gallery and the blog sign up page. It is exactly replicated across the site to ensure consistency for the user.</p>
 
 <p>The navigation allows users to browse the site from any page without having to use the back button on their device.</p>
-Nav Bar screenshot
+
+<p><img width="640px" height=auto src="assets/images/readme/nav_desktop.PNG" alt="two dogs website header on desktop"></p>
+<p><img width="375px" height=auto src="assets/images/readme/nav_mobile.PNG" alt="two dogs website header on mobile"></p>
+<p><img width="375px" height=auto src="assets/images/readme/nav_mobile_open.PNG" alt="two dogs website nav menu open on mobile"></p>
 <br>
 
 <strong>The landing page hero image</strong>
@@ -81,11 +85,11 @@ Sign Up screenshot
 </ul>
 </p>
 
-<p>Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tools. The results were as follows.</p>
+<p>Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tools. As performance is not optimal, improvements were investigated such as using webp images or minfying the CSS. Both resulted in the score lowering even further, by as much as 10 points in the case of the image file type. In place of the recomendation this release uses source sets and mulitple css files, resulting in marginal improvements. Further investigation into the recommended changes should take place for future releases.</p>
 
 <strong>Lighthouse</strong>
 <ul>
-    <li>Performance - 75</li>
+    <li>Performance - 77</li>
     <li>Accessibility - 100</li>
     <li>Best Practices - 100</li>
     <li>SEO - 100</li>
