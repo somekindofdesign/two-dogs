@@ -8,7 +8,7 @@
     <meta name="keywords" content="dogs, blog, chinese crested, husky">
 
     <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/galleries.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/two-dogs-favicon.svg">
     <title>Two Dogs</title>
@@ -50,13 +50,18 @@
         <h1>Tony came to visit</h1>
         <p class="caption">August 29th 2022</p>
     </section>
-    <img src="../assets/images/tony_visits.jpg" alt="silhouette of a small chihuahua called tony" class="blog-post-img">
+    <picture>
+        <source media="(min-width:1800px)" srcset="/assets/images/blog/tony_visits_oversize.jpg">
+        <source media="(min-width:1024px)" srcset="/assets/images/blog/tony_visits_large.jpg">
+        <source media="(min-width:768px)" srcset="/assets/images/blog/tony_visits_medium.jpg">
+        <img src="/assets/images/blog/tony_visits.jpg" alt="silhouette of a small chihuahua called tony">
+      </picture>
     <div id="blog-post">
         <p><strong>Meet Tony. Small, even for a chihuahua. Angry, even for a chihuahua. Demented, even for a chihuahua.</strong></p>
         <p>He is my brother and sister-in-law's dog and he came to say while they were visiting faimily abroad.</p>
         <p>Eric and Tony have a lot in common, different reasons but same outcome.</p>
         <div class="img-text">
-            <img src="../assets/images/little_tony.jpg" alt="tony the tiny chihuahua up close">
+            <img src="../assets/images/blog/little_tony.jpg" alt="tony the tiny chihuahua up close">
             <p>Only a few people are allowed to touch them, they don't like much except for lying around in peace and quiet.
             <br>Unlike most dogs, they're not motivated by food so are largely untrained.</p>
         </div>

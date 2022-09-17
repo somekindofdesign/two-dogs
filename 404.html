@@ -52,7 +52,11 @@
         <a href="/gallery.html" class="btn btn-orange">look at pictures of puppies instead</a>
     </section>
     <div>
-    <img src="/assets/images/two_dogs_snuggled_chair.jpg" alt="two dogs snuggled together on a chair">
+        <picture>
+            <source media="(min-width:1800px)" srcset="/assets/images/two_dogs_snuggled_chair_oversize.jpg">
+            <source media="(min-width:1024px)" srcset="/assets/images/two_dogs_snuggled_chair_large.jpg">
+            <img src="/assets/images/two_dogs_snuggled_chair.jpg" alt="two dogs snuggled together on a chair">
+          </picture>
     </div>
     <section id="sign-up-banner">
         <div class="two-col">

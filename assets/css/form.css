@@ -1,0 +1,181 @@
+/* sign up form*/
+
+#sign-up-form {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1em;
+}
+
+    #sign-up-form > img {
+        object-fit: cover;
+    }
+
+form {
+    border: 1px solid #85144B;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+*:focus {
+    outline: none;
+    }
+
+input[type="text"], select {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    color: #585160;
+    border: 1px solid #DEDCDF;
+    border-radius: 3px;
+    padding: 1em .5em 1em .5em;
+    margin-bottom: 2em;
+}
+
+input[type="email"] {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    color: #585160;
+    border: 1px solid #DEDCDF;
+    border-radius: 3px;
+    padding: 1em .5em 1em .5em;
+    margin-bottom: 2em;
+}
+
+input[type="text"]:hover, select:hover {
+    border: 1px solid #FF851B;
+}
+
+input[type="email"]:hover {
+    border: 1px solid #FF851B;
+}
+
+input[type="text"]:focus, select:focus {
+    border: 1px solid #001F3F;
+}
+
+input[type="email"]:focus {
+    border: 1px solid #001F3F;
+}
+
+input[type="text"]:active, select:active {
+    border: 1px solid #001F3F;
+    appearance: none;
+}
+
+input[type="email"]:active {
+    border: 1px solid #001F3F;
+}
+
+::placeholder {
+    color: #DEDCDF;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+label {
+    color: #001F3F;
+    font-weight: 700;
+    background-color: #ffffff;
+}
+
+/* radio button custom styling courtesy of Dirk Gavor via SliderRevolution.com */
+#radio-group {
+    padding-bottom: 1em;
+}
+
+#radio-group div {
+    width: 100%;
+    margin-right: 0;
+}
+
+#radio-group p {
+    font-weight: 700;
+    color: #001F3F;
+}
+
+/* radio -> */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #585160;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #fff;
+    border: 1px solid #585160;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .radio {
+    border: 1px solid #FF851B;
+  }
+  
+  .container input:checked ~ .radio {
+    background-color: #fff;
+  }
+  
+  .radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+/* Checkbox layout courtesy of W3Schools */
+  .container input:checked ~ .radio:after {
+    display: block;
+  }
+  
+  .container .radio:after {
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FF851B;
+  }
+
+
+  /* media queries */
+
+@media screen and (min-width: 768px) {
+    #sign-up-form {
+      display: flex;
+      width: 100%;
+      max-width: 1280px;
+      box-sizing: border-box;
+      margin: auto;
+      padding: 3em;
+      gap: 3em;
+    }
+
+    form, #sign-up-form img {
+        width: 50%;
+    }
+
+}
