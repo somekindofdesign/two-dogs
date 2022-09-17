@@ -1,5 +1,6 @@
 <h1>Welcome to Two Dogs!</h1>
 <p>Two Dogs is a blog site that hopes to bring light-hearted and entertaining content by showcasing events in the life of the Two Dogs - Wreckless Eric and Baby Jim. It includes stories, images and videos about what they get up to in their day-to-day life.</p>
+<strong>The live site can be found <a href="https://somekindofdesign/two-dog.github.io/two-dogs/index.html">here</a></p></strong>
 <br>
 <p><img width="640px" height=auto src="assets/images/readme/two-dogs.jpg" alt="two dogs blog on desktop, laptop and mobile devices">
 Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_12220977.htm#query=device%20mockup&position=1&from_view=keyword">Freepik</a></p>
@@ -7,6 +8,8 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 
 <h2>Audiences</h2>
 <p>The target audience for this site is consumers of online entertainment with a cross section of dog-lovers. It's primary source of traffic will be through social media channels. If the site is successful, it is expected that a portion of users will come from signing up to the blog.</p>
+<p>It is anticipated that due to the nature of the site, users will predominatly use their mobile phone to use the Two Dogs site. This should be verified as the site gathers traffic.</p>
+
 <ul>
 <strong>User Stories</strong>
 <li>As a dog lover and online content consumer I want to view content relating to dogs online</li>
@@ -26,6 +29,8 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 
 <p>The navigation allows users to browse the site from any page without having to use the back button on their device.</p>
 
+<p>It uses code from ??. This particular piece of code was used as it included consideration for users of screen readers, increasing the reach of the accessibility of the site.</p>
+
 <p><img width="640px" height=auto src="assets/images/readme/nav_desktop.PNG" alt="two dogs website header on desktop"></p>
 <p><img width="375px" height=auto src="assets/images/readme/nav_mobile.PNG" alt="two dogs website header on mobile"></p>
 <p><img width="375px" height=auto src="assets/images/readme/nav_mobile_open.PNG" alt="two dogs website nav menu open on mobile"></p>
@@ -33,32 +38,39 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 
 <strong>The landing page hero image</strong>
 <p>The landing page opens up to an image of the two dogs, enticing the user to explore the site further and find out more about them. The image has a slight zoom to help focus the user on the call-to-action, beginning their journey on the site.</p>
-Landing Page image
+
+<p><img width="640px" height=auto src="assets/images/readme/hero_desktop.PNG" alt="two dogs website hero section on desktop"></p>
 <br>
 
 <strong>The footer</strong>
 <p>The footer includes links to relevant social media sites, opened in new tabs to avoid taking the user away from this site.</p>
-Footer screenshot
+
+<p><img width="640px" height=auto src="assets/images/readme/hero_desktop.PNG" alt="two dogs website hero section on desktop"></p>
 <br>
 
 <strong>The meet page</strong>
-<p>The meet page introduces users to the Two Dogs and allows them to learn some basic facts about their history and personality including likes and dislikkes. This is important in building rapport with the audience.</p>
-Meet screenshot
+<p>The meet page introduces users to the Two Dogs and allows them to learn some basic facts about their history and personality including likes and dislikkes. This is important in building interest with the audience.</p>
+
+<p><img width="480px" height=auto src="assets/images/readme/meet_desktop.png" alt="two dogs website meet page on desktop"></p>
 <br>
 
 <strong>The tails blog</strong>
 <p>The Tails Blog houses blog posts giving detailed stories about the Two Dogs lives. Users will find written content, images and videos updated frequently here. This is the main focus of the website and will grow over time as new content is added.</p>
-Tails screenshot
+
+<p><img width="480px" height=auto src="assets/images/readme/blog_desktop.png" alt="two dogs website meet page on desktop"></p>
 <br>
 
 <strong>The gallery</strong>
-<p>The gallery contains visual content of the dogs including those from the Tails blog posts and completely new content. It supports the core feature of the site, the blog.</p>
-Gallery screenshot
+<p>The gallery contains visual content of the dogs including from the Tails blog posts and completely new content. It supports the core feature of the site, the blog.</p>
+
+<p><img width="480px" height=auto src="assets/images/readme/gallery_desktop.png" alt="two dogs website meet page on desktop"></p>
 <br>
 
 <strong>The sign up page</strong>
-<p>The sign up page includes a sign up form that allows users to opt in to periodical emails containing the latest stories from the Two Dogs lives. Users are in control of the frequency of the emails received.</p>
-Sign Up screenshot
+<p>The sign up page includes a sign up form that allows users to opt in to periodical emails containing the latest stories from the Two Dogs lives. Users are in control of the frequency of the emails received. To encourage users to sign up, there is a call-to-action in the form of a banner throughout the site.</p>
+
+<p><img width="480px" height=auto src="assets/images/readme/sign_up_desktop.PNG" alt="two dogs website meet page on desktop"></p>
+<p><img width="480px" height=auto src="assets/images/readme/sign_up_banner.PNG" alt="two dogs website meet page on desktop"></p>
 <br>
 
 <h3>Features Left to Implement</h3>
@@ -66,7 +78,7 @@ Sign Up screenshot
     <li>CMS for adding and organising blog posts and image/video content</li>
     <li>Automated emails to subscribed users with optional daily, weekly or monthly updates</li>
     <li>Comments and social sharing on blog posts</li>
-    <li>Option to implement dynamic image sizes at different screen sizes</li>
+    <li>Improved image delivery for getter quality and optimised performance</li>
     <li>Implement custom 404 page (page has been built in this release, implementation blocked by git restrictions)</li>
 </ul>
 <br>
@@ -74,7 +86,7 @@ Sign Up screenshot
 <h2>Testing</h2>
 <p>Throughout the development of this site, testing was carried out on different devices using the developer tools on multiple browsers including Chrome, Firefox and Microsoft Edge on Windows 10.</p>
 
-<p>This was repeated at the final testing phase of the project using the free testing variations on <a href="https://live.browserstack.com/dashboard">BrowserStack.com</a>, while extending the reach of testing to other Windows OS, the broswer Safari and multiple MacOS. It is worth noting that as this is a free tool, the accuracy of the tests may be limited.</p>
+<p>This was repeated towards the end of the project using the free testing tool on <a href="https://live.browserstack.com/dashboard">BrowserStack.com</a>, while extending the reach of testing to other Windows OS, the broswer Safari and multiple MacOS. It is worth noting that as this is a free tool, the accuracy of the tests may be limited.</p>
 
 <p>For all testing, each page was reviewed across the following criteria;
 <ul>
@@ -85,7 +97,7 @@ Sign Up screenshot
 </ul>
 </p>
 
-<p>Additionally, the sight was evaluated by Google's Lighthouse and Page Speed tools. As performance is not optimal, improvements were investigated such as using webp images or minfying the CSS. Both resulted in the score lowering even further, by as much as 10 points in the case of the image file type. In place of the recomendation this release uses source sets and mulitple css files, resulting in marginal improvements. Further investigation into the recommended changes should take place for future releases.</p>
+<p>The site was evaluated by Google's Lighthouse and Page Speed tools. As performance is not optimal, improvements were investigated such as using webp images or minfying the CSS. Both resulted in the score lowering even further, by as much as 10 points in the case of the image file type. In place of the recommendations from Google this release uses source sets and mulitple css files, resulting in marginal improvements from the first audit. Further investigation into the recommended changes should take place for future releases.</p>
 
 <strong>Lighthouse</strong>
 <ul>
@@ -98,47 +110,60 @@ Sign Up screenshot
 
 <strong>Page Speed</strong>
 <ul>
-    <li>Mobile - </li>
-    <li>Desktop - </li>
+    <li>Mobile - 77</li>
+    <li>Desktop - 97</li>
 </ul>
+<br>
+
+<strong>UAT</strong>
+<p>In addition, remote user acceptance testing was conducted with 3 users; two using mobile devices and one using a desktop. Users reported a satisfactory experience, with no difficulty using or understanding the website. One user reported a typo.</p>
 <br>
 
 <h3>Validator Testing</h3>
 <p>
-During initial testing, opportunity to refactor the code were dicovered and an attempt was made to improve it. This resulted in larger changes than expected, such as the move to using styled sections over individually targeted elements, which required additional fixes and further testing before release.</p>
+During initial testing, opportunity to refactor the code were discovered and an attempt was made to improve it. This resulted in larger changes than expected, such as the move to using styled sections over individually targeted elements, which required additional fixes and further testing before release.</p>
 <br>
 
 <strong>HTML</strong>
 <p>In the first round of html validator testing, button tags and section/article tags were found to be used incorrectly. In addition, there were a small number of open and unnecessary tags that needed to be addressed.</p>
 
-<p>**The second round, conducted after implementing the new structure, found a open div on the index page, sections incorrectly used in place of divs and some stray tags. In two instances, changing the section to div required updating the css file to maintain syles.</p>
+<p>The second round, conducted after implementing the new structure, found an open div on the index page, sections incorrectly used in place of divs and some stray tags. In two instances, changing the section to div required updating the css file to maintain syles.</p>
 
-<p>The third and final round returned no errors for this project.</p>
+<p>The third and final round of testing before deployment returned no errors for this project.</p>
 <br>
 
 <strong>CSS</strong>
 <p>In the first round of css validator testing, some unclosed attributes were found. This highlighted that these attributes were unecessary to the output of the code and were removed.</p>
 
-<p>**The second round, conducted after implementing more efficient css, found two parse errors. In addition, it warned of the use of the deprecated property 'clip'.</p>
+<p>The second round, conducted after implementing more efficient css, found two parse errors. In addition, it warned of the use of the deprecated property 'clip'.</p>
 
-<p>The third and final round returned no errors for this project.</p>
+<p>The third and final round of testing before deployment returned no errors for this project.</p>
 <br>
 
 <h2>Unfixed Bugs</h2>
-<strong>Browser Discrepencies</strong>
-<p>On both Firefox and Safari, the redirect to the custom success page after submitting the sign up form is broken. The user is brough to the Code Institute 'form dump' confirmation page.</p>
-<br>
-
-<p>Also Firefox and Safari, the custom styling on the sign up form is not displaying as expected and is overwritten by browser defaults. Although this does not interfere with the user experience, it does effect the brand and site consistency.</p>
-<br>
+<ul>
+    <li>Some divs and/or sections are not extended the height of their content on screens below 768px</li>
+    <li>The mobile menu drawer should be wider and float to the right</li>
+    <li>The hamburger menu icon on mobile screens should float right</li>
+    <li>On very small screens (below 375px) the logo breaks onto two lines</li>
+    <li>Buttons are not full width on screens below 768px, resulting in some breaking onto two lines on very small screens</li>
+    <li>On Firefox and Safari, the custom success page redirect brings users to the Code Institute 'form dump' confirmation page</li>
+    <li>On Firefox and Safari, custom input styling is overwritten by browser defaults.</li>
+</ul>
 
 <h2>Deployment</h2>
-<p>**This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
-**The site was deployed to GitHub pages. The steps to deploy are as follows:
-**In the GitHub repository, navigate to the Settings tab
- **From the source section drop-down menu, select the Master Branch
-**Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-**The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html</p>
+<p>As part of the Code Institute submission process, this site was deployed to GitHub pages. The steps to deploy are as follows:
+<ol>
+    <li>Open github.com and log in to user account</li>
+    <li>Find Two-Dogs repository</li>
+    <li>In the GitHub repository, navigate to the Settings tab</li>
+    <li>Find the page section on the left hand menu</li>
+    <li>Check source is 'Deploy from branch'</li>
+    <li>Check branch is 'main'</li>
+    <li>Click save</li>
+</ol
+
+<strong>The live site can be found here - <a href="https://somekindofdesign/two-dog.github.io/two-dogs/index.html">https://somekindofdesign/two-dog.github.io/two-dogs/index.html</a></p></strong>
 <br>
 
 <h2>Credits</h2>
