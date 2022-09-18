@@ -29,7 +29,7 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 
 <p>The navigation allows users to browse the site from any page without having to use the back button on their device.</p>
 
-<p>It uses code from ??. This particular piece of code was used as it included consideration for users of screen readers, increasing the reach of the accessibility of the site.</p>
+<p>It uses code from Medium.com (futher details in Credits section below). This particular piece of code was used as it included consideration for users of screen readers, increasing the reach of the accessibility of the site.</p>
 
 <p><img width="640px" height=auto src="assets/images/readme/nav_desktop.PNG" alt="two dogs website header on desktop"></p>
 <p><img width="375px" height=auto src="assets/images/readme/nav_mobile.PNG" alt="two dogs website header on mobile"></p>
@@ -78,7 +78,7 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
     <li>CMS for adding and organising blog posts and image/video content</li>
     <li>Automated emails to subscribed users with optional daily, weekly or monthly updates</li>
     <li>Comments and social sharing on blog posts</li>
-    <li>Improved image delivery for getter quality and optimised performance</li>
+    <li>Improved image delivery for better quality, responsive and optimised performance</li>
     <li>Implement custom 404 page (page has been built in this release, implementation blocked by git restrictions)</li>
 </ul>
 <br>
@@ -86,7 +86,7 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 <h2>Testing</h2>
 <p>Throughout the development of this site, testing was carried out on different devices using the developer tools on multiple browsers including Chrome, Firefox and Microsoft Edge on Windows 10.</p>
 
-<p>This was repeated towards the end of the project using the free testing tool on <a href="https://live.browserstack.com/dashboard">BrowserStack.com</a>, while extending the reach of testing to other Windows OS, the broswer Safari and multiple MacOS. It is worth noting that as this is a free tool, the accuracy of the tests may be limited.</p>
+<p>This was repeated towards the end of the project using the free testing tool on <a href="https://live.browserstack.com/dashboard">BrowserStack.com</a>, while extending the reach of testing to other Windows OS, the browser Safari and multiple MacOS. It is worth noting that as this is a free tool, the accuracy of the tests may be limited.</p>
 
 <p>For all testing, each page was reviewed across the following criteria;
 <ul>
@@ -96,8 +96,10 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
     <li>Consistency, convention and expectation (ie does it allow affordance to the user)</li>
 </ul>
 </p>
+<br>
 
 <p>The site was evaluated by Google's Lighthouse and Page Speed tools. As performance is not optimal, improvements were investigated such as using webp images or minfying the CSS. Both resulted in the score lowering even further, by as much as 10 points in the case of the image file type. In place of the recommendations from Google this release uses source sets and mulitple css files, resulting in marginal improvements from the first audit. Further investigation into the recommended changes should take place for future releases.</p>
+<br>
 
 <strong>Lighthouse</strong>
 <ul>
@@ -141,17 +143,20 @@ During initial testing, opportunity to refactor the code were discovered and an 
 <br>
 
 <h2>Unfixed Bugs</h2>
+<p>This release includes some bugs that should be addressed in future releases. Although appear to block using the site, they negatively effect user experience due to positioning and inconsistent styling, and should be prioritised.</p>
 <ul>
-    <li>Some divs and/or sections are not extended the height of their content on screens below 768px</li>
-    <li>The mobile menu drawer should be wider and float to the right</li>
+    <li>Some divs and/or sections are not extending the height of their content on screens below 768px</li>
     <li>The hamburger menu icon on mobile screens should float right</li>
-    <li>On very small screens (below 375px) the logo breaks onto two lines</li>
+    <li>The mobile menu drawer should be wider and float to right</li>
+    <li>On very small screens (below 368px) the logo breaks onto two lines</li>
     <li>Buttons are not full width on screens below 768px, resulting in some breaking onto two lines on very small screens</li>
+    <li>Hero and about-breeds images are not using a responsive solution</li>
     <li>On Firefox and Safari the custom success page redirect brings users to the Code Institute 'form dump' confirmation page</li>
     <li>On Chrome, Opera and Samsung mobile apps, the Code Institute 'form dump' confirmation page opens in a new tab or pop up while redirecting to the success page on the original tab</li>
     <li>On Firefox and Safari, custom input styling is overwritten by browser defaults.</li>
-    <li>On Samsung mobile app, dark mode alters colors</li>
+    <li>On Samsung mobile app, dark mode alters colors from brand</li>
 </ul>
+<br>
 
 <h2>Deployment</h2>
 <p>As part of the Code Institute submission process, this site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -164,6 +169,9 @@ During initial testing, opportunity to refactor the code were discovered and an 
     <li>Check branch is 'main'</li>
     <li>Click save</li>
 </ol
+
+<p>The first deployment highlighted incorrect filepaths across the site, breaking css and navigation and images. When the paths were corrected the site was retested across multiple browsers and devices (several redeployments were required). On final validation an error was returned for success.html regarding incorrectly used mute tags and a deprecated border tag. Once the site as retested and validated, this readme file was updated and a final deployment was executed.</p>
+<br>
 
 <strong>The live site can be found here - <a href="https://somekindofdesign/two-dog.github.io/two-dogs/index.html">https://somekindofdesign/two-dog.github.io/two-dogs/index.html</a></p></strong>
 <br>
