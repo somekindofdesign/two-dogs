@@ -45,7 +45,7 @@ Image by <a href="https://www.freepik.com/free-psd/artist-room-decorated_1222097
 <strong>The footer</strong>
 <p>The footer includes links to relevant social media sites, opened in new tabs to avoid taking the user away from this site.</p>
 
-<p><img width="640px" height=auto src="assets/images/readme/hero_desktop.PNG" alt="two dogs website hero section on desktop"></p>
+<p><img width="640px" height=auto src="assets/images/readme/footer_desktop.PNG" alt="two dogs website hero section on desktop"></p>
 <br>
 
 <strong>The meet page</strong>
@@ -148,8 +148,9 @@ During initial testing, opportunity to refactor the code were discovered and an 
     <li>On very small screens (below 375px) the logo breaks onto two lines</li>
     <li>Buttons are not full width on screens below 768px, resulting in some breaking onto two lines on very small screens</li>
     <li>On Firefox and Safari the custom success page redirect brings users to the Code Institute 'form dump' confirmation page</li>
-    <li>On Chrome mobile app, the Code Institute 'form dump' confirmation page opens in a new tab while redirecting to the success page on the original tab</li>
+    <li>On Chrome, Opera and Samsung mobile apps, the Code Institute 'form dump' confirmation page opens in a new tab or pop up while redirecting to the success page on the original tab</li>
     <li>On Firefox and Safari, custom input styling is overwritten by browser defaults.</li>
+    <li>On Samsung mobile app, dark mode alters colors</li>
 </ul>
 
 <h2>Deployment</h2>
